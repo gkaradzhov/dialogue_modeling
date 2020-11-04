@@ -1,0 +1,3 @@
+[submodule "external_tools/Cornell-Conversational-Analysis-Toolkit"]
+	path = external_tools/Cornell-Conversational-Analysis-Toolkit
+	url = https://github.com/CornellNLP/Cornell-Conversational-Analysis-Toolkit
