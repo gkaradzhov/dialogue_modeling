@@ -20,14 +20,17 @@ class WasonConversation:
         self.wason_messages = []
         self.identifier = identifier
 
-    def pos_tag_everything(self, tagger):
+    def preprocess_everything(self, tagger):
         for item in self.wason_messages:
             doc = tagger(item.content)
             item.content_pos = [a.pos_ for a in doc]
+            item.content_tokenised = [a.text for a in doc]
+
+        
 
     def to_street_crowd_format(self):
         data = []
         for count, item in enumerate(self.wason_messages):
-            data.append((item.origin, item.content, " ".join(item.content_pos), count))
+            data.append((item.origin, " ".join(item.content_tokenised), " ".join(item.content_pos), count))
 
         return data
