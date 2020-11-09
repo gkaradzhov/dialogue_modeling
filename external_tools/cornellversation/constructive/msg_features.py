@@ -16,7 +16,9 @@ import re
 import os
 from collections import defaultdict
 
-from stopwords import stopwords as mallet_stopwords
+import nltk
+from nltk.corpus import stopwords
+
 
 
 class Lexicon(object):
@@ -63,16 +65,16 @@ lexicons = {
                  'theyve', "they're", "theyre"]
 }
 
-with open(os.path.join('lexicons', 'my_geo.txt')) as f:
+with open(os.path.join('../external_tools/cornellversation/constructive/lexicons', 'my_geo.txt')) as f:
     lexicons['geo'] = [line.strip().lower() for line in f]
 
-with open(os.path.join('lexicons', 'my_meta.txt')) as f:
+with open(os.path.join('../external_tools/cornellversation/constructive/lexicons', 'my_meta.txt')) as f:
     lexicons['meta'] = [line.strip().lower() for line in f]
 
-with open(os.path.join('lexicons', 'my_certain.txt')) as f:
+with open(os.path.join('../external_tools/cornellversation/constructive/lexicons', 'my_certain.txt')) as f:
     lexicons['certain'] = [line.strip().lower() for line in f]
 
-with open(os.path.join('lexicons', 'my_hedges.txt')) as f:
+with open(os.path.join('../external_tools/cornellversation/constructive/lexicons', 'my_hedges.txt')) as f:
     lexicons['hedge'] = [line.strip().lower() for line in f]
 
 
@@ -85,7 +87,7 @@ def get_content_tagged(words, tags):
             if tag in ("N", "^", "S", "Z", "A", "T", "V")]
 
 
-def message_features(chat, reasons=None, stopwords=mallet_stopwords):
+def message_features(chat, reasons=[]):
     """Compute message-level features from a chat.
 
     Parameters
@@ -103,6 +105,8 @@ def message_features(chat, reasons=None, stopwords=mallet_stopwords):
         an idea, because they are written independently.
 
     """
+    sw = stopwords.words('english')
+
     seen_words = set()
     introduced = defaultdict(set)
     where_introduced = defaultdict(list)
@@ -114,7 +118,7 @@ def message_features(chat, reasons=None, stopwords=mallet_stopwords):
     for k, (user, tokens, tags) in enumerate(reasons):
         features = {}
         content_words = [w for w in get_content_tagged(tokens, tags)
-                         if w not in stopwords]
+                         if w not in sw]
 
         # all new content words are new ideas here
         introduced[user].update(content_words)
