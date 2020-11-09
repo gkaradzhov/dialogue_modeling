@@ -1,5 +1,3 @@
-import spacy
-
 
 class WasonMessage:
     def __init__(self, origin, content, annotation_obj):
@@ -24,7 +22,7 @@ class WasonConversation:
         for item in self.wason_messages:
             doc = tagger(item.content)
             item.content_pos = [a.pos_ for a in doc]
-            item.content_tokenised = [a.text for a in doc]
+            item.content_tokenised = [a.text.lower() for a in doc]
 
         
 
