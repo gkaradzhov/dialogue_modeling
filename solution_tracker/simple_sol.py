@@ -4,17 +4,15 @@ from read_data import read_solution_annotaions, read_wason_dump, read_3_lvl_anno
 from wason_message import WasonConversation, WasonMessage
 import pandas as pd
 
-def process_raw_to_solution_tracker(wason_conversation: WasonConversation):
+def process_raw_to_solution_tracker(wason_conversation: WasonConversation, prediction=False):
     solution_tracker = []
     initial_submissions = {}
     initial_cards = set()
-    total_anns = 0
-    correct_anns = 0
-    prec_total = 0
-    prec_correct = 0
+    conf_matrix = {'TP': 0, 'FP': 0, 'TN': 0, 'FN': 0}
 
     last_solution = set('0')
     is_solution_proposed_last = False
+    last_partial = False
     # Get initial submissions
     for rm in wason_conversation.raw_db_conversation:
         if rm['message_type'] == "WASON_INITIAL":
@@ -40,13 +38,6 @@ def process_raw_to_solution_tracker(wason_conversation: WasonConversation):
     for item in wason_conversation.raw_db_conversation:
         if item['user_status'] != 'USR_PLAYING':
             continue
-        # if item['message_type'] == 'WASON_GAME':
-        #     solution_tracker.append({'type': "CLICK",
-        #                              'content': "CLICK",
-        #                              'user': item['user_name'],
-        #                              'value': set([l['value'] for l in item['content'] if l['checked']]),
-        #                              'id': item['message_id']
-        #                              })
 
         if item['message_type'] == 'WASON_SUBMIT':
             solution_tracker.append({'type': "SUBMIT",
@@ -75,26 +66,24 @@ def process_raw_to_solution_tracker(wason_conversation: WasonConversation):
                 type, cards = extract_from_message(wason_message, initial_cards)
 
                 if cards != {'0'}:
-                    last_solution = cards
+                    if 'partial_solution' in wason_message.annotation['additional'] and last_solution != {'0'}:
+                        if last_partial:
+                            last_solution.update(cards)
+                            cards = last_solution
+                        else:
+                            last_partial = True
+                            last_solution = cards
+                    else:
+                        last_solution = cards
+                        last_partial = False
                     is_solution_proposed_last = True
 
-            if cards == {'0'} and wason_message.annotation['target'] == 'Agree' and is_solution_proposed_last:
-                cards = last_solution
+            # if cards == {'0'} and wason_message.annotation['target'] == 'Agree' and is_solution_proposed_last:
+            #     cards = last_solution
 
             if len({'partial_solution', 'complete_solution', 'solution_summary'}.intersection(
-                    wason_message.annotation['additional'])) >= 1 or wason_message.annotation['target'] == 'Agree':
-                total_anns += 1
-
-                if wason_message.annotation['sols'] != {'0'}:
-                    prec_total += 1
-
-                if cards == wason_message.annotation['sols']:
-                    correct_anns += 1
-                    if wason_message.annotation['sols'] != {'0'}:
-                        prec_correct += 1
-                else:
-                    pass
-                    # print("{} : {} : {}".format(wason_message.content, wason_message.annotation['sols'], cards))
+                    wason_message.annotation['additional'])) >= 1:
+                    # or wason_message.annotation['target'] == 'Agree':
 
                 if cards != {'0'}:
                     solution_tracker.append({'type': "MENTION",
@@ -104,8 +93,21 @@ def process_raw_to_solution_tracker(wason_conversation: WasonConversation):
                                              'id': item['message_id']
                                              })
 
-    return correct_anns, total_anns, prec_correct, prec_total, solution_tracker
-    pass
+                if not prediction:
+                    annotation = wason_message.annotation['sols']
+                    if cards == annotation:
+                        if cards == {'0'}:
+                            conf_matrix['TN'] += 1
+                        else:
+                            conf_matrix['TP'] += 1
+                    else:
+                        # print("{} {} {}".format(wason_message.content, cards, annotation))
+                        if annotation == {'0'}:
+                            conf_matrix['FP'] += 1
+                        else:
+                            conf_matrix['FN'] += 1
+
+    return conf_matrix, solution_tracker
 
 
 def extract_from_message(wason_message: WasonMessage, initial_cards, annotations=None):
@@ -145,22 +147,27 @@ if __name__ == "__main__":
         hierch = [d for d in hierch_data if d.identifier == conv.identifier][0]
         conv.merge_all_annotations(hierch)
 
-    correct = 0
-    total = 0
-    p_correct = 0
-    p_total = 0
-
     sols = []
+    full_conf_matrix = {'TP': 0, 'TN': 0, 'FP': 0, 'FN': 0}
     for conv in conversations_to_process:
-        c_correct, c_total, cp_correct, cp_total, sol_tracker = process_raw_to_solution_tracker(conv)
-        correct += c_correct
-        total += c_total
-        p_correct += cp_correct
-        p_total += cp_total
+        local_conf_mat, sol_tracker = process_raw_to_solution_tracker(conv)
+
+        full_conf_matrix['TP'] += local_conf_mat['TP']
+        full_conf_matrix['FP'] += local_conf_mat['FP']
+        full_conf_matrix['TN'] += local_conf_mat['TN']
+        full_conf_matrix['FN'] += local_conf_mat['FN']
+
         sols.append(sol_tracker)
 
-    print(correct/total)
-    print(p_correct/p_total)
+    accuracy = (full_conf_matrix['TP'] + full_conf_matrix['TN']) /\
+               (full_conf_matrix['TP'] + full_conf_matrix['FP'] + full_conf_matrix['TN'] + full_conf_matrix['FN'])
+    precision = (full_conf_matrix['TP']) /\
+               (full_conf_matrix['TP'] + full_conf_matrix['FP'])
+    recall = (full_conf_matrix['TP']) / \
+                (full_conf_matrix['TP'] + full_conf_matrix['FN'])
+    print('Accuracy: ', accuracy)
+    print('Precision: ', precision)
+    print('Recall: ', recall)
 
     df = pd.DataFrame(sols[0])
 

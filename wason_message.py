@@ -25,6 +25,7 @@ class WasonConversation:
             item.content_tokenised = [a.text.lower() for a in doc]
 
 
+
     def to_street_crowd_format(self):
         data = []
         for count, item in enumerate(self.wason_messages):

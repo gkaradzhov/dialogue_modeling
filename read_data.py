@@ -42,7 +42,9 @@ def read_wason_dump(dump_path):
                             'message_type': item[3],
                             'content': content,
                             'user_status': item[5],
-                            'timestamp': item[6]
+                            'timestamp': item[6],
+                            'user_type': 'participant'
+
                         })
                     else:
                         conv.raw_db_conversation.append({
@@ -53,7 +55,7 @@ def read_wason_dump(dump_path):
                             'content': content,
                             'user_status': item[5],
                             'timestamp': item[6],
-                            'user_type': item[7]
+                            'user_type': item[7] if len(item[7]) > 0 else 'participant'
                         })
 
         except Exception as e:

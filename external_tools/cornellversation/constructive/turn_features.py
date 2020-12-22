@@ -12,9 +12,9 @@ See the `test` function for a usage example.
 # Author: Vlad Niculae <vlad@vene.ro>
 # License: Simplified BSD
 
-from stopwords import stopwords
+from nltk.corpus import stopwords
 
-from agree import has_agreement, has_disagreement
+from external_tools.cornellversation.constructive.agree import has_agreement, has_disagreement
 
 
 def sublist_bigrams(pos_list):
@@ -81,12 +81,14 @@ def turn_features(turns):
         if has_disagreement(words):
             features['disagree'] = 1
 
+        sw = stopwords.words('english')
+
         # words and accommodation
         words = [w.lower() for msg in words for w in msg.split()]
         prev_words = [w.lower() for msg in prev_words for w in msg.split()]
 
-        prev_stop = set([w for w in prev_words if w in stopwords])
-        prev_content = [w for w in prev_words if w not in stopwords]
+        prev_stop = set([w for w in prev_words if w in sw])
+        prev_content = [w for w in prev_words if w not in sw]
 
         prev_content = set(prev_content)
 
