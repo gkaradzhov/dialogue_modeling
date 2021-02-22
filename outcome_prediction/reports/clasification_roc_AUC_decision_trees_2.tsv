@@ -1,0 +1,748 @@
+2021-01-24 18:50:31.330551	0.5257936507936508	meta_feats	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_depth=10,
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': 10}"
+2021-01-24 18:50:31.905770	0.5734126984126984	annotation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:32.560992	0.41269841269841273	sc_turns	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:33.014388	0.46825396825396826	sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:33.741500	0.3551587301587301	solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_depth=10,
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': 10}"
+2021-01-24 18:50:34.432498	0.5813492063492063	annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:34.936109	0.30753968253968256	annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_depth=10,
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': 10}"
+2021-01-24 18:50:35.485896	0.5595238095238095	fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:36.119472	0.6805555555555556	fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:36.760775	0.46230158730158727	meta_feats,annotation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:37.315500	0.503968253968254	meta_feats,sc_turns	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:37.863957	0.44047619047619047	meta_feats,sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:38.583888	0.47619047619047616	meta_feats,solution_participation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:39.420864	0.4107142857142857	meta_feats,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:40.149254	0.4107142857142857	meta_feats,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_depth=10, max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': 10}
+2021-01-24 18:50:40.630331	0.5952380952380953	meta_feats,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:41.044553	0.5257936507936508	meta_feats,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:41.478167	0.45436507936507936	annotation,sc_turns	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:41.934907	0.49007936507936506	annotation,sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:42.408231	0.47619047619047616	annotation,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:42.884591	0.2996031746031746	annotation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:43.370830	0.5317460317460317	annotation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:43.801069	0.744047619047619	annotation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:44.260783	0.5892857142857143	annotation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:44.679850	0.45436507936507936	sc_turns,sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:45.095804	0.3412698412698413	sc_turns,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:45.599933	0.35714285714285715	sc_turns,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:46.080336	0.5674603174603174	sc_turns,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_depth=10, max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': 10}
+2021-01-24 18:50:46.519613	0.5734126984126984	sc_turns,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:47.082858	0.6388888888888888	sc_turns,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:47.483709	0.39087301587301587	sc_messages,solution_participation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:47.966095	0.4265873015873016	sc_messages,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:48.358651	0.44841269841269843	sc_messages,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:48.801245	0.5456349206349207	sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:49.231100	0.5873015873015872	sc_messages,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:49.682618	0.5456349206349207	solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:50.083610	0.39682539682539686	solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:50.484129	0.46031746031746035	solution_participation,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:50.894017	0.623015873015873	solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:51.344363	0.48809523809523814	annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:51.844169	0.7797619047619047	annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:52.347602	0.5674603174603174	annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:52.777756	0.5813492063492063	annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:53.350867	0.5753968253968254	annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:53.791242	0.5952380952380953	fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:54.153629	0.46825396825396826	meta_feats,annotation,sc_turns	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:54.548648	0.49801587301587297	meta_feats,annotation,sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:54.927253	0.48214285714285715	meta_feats,annotation,solution_participation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:55.385092	0.6369047619047619	meta_feats,annotation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:55.788529	0.5178571428571428	meta_feats,annotation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:56.184077	0.6309523809523809	meta_feats,annotation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:56.638492	0.7242063492063492	meta_feats,annotation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:57.061082	0.48214285714285715	meta_feats,sc_turns,sc_messages	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:57.490646	0.5317460317460317	meta_feats,sc_turns,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:57.988611	0.46825396825396826	meta_feats,sc_turns,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:58.367827	0.39880952380952384	meta_feats,sc_turns,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_depth=10, max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': 10}
+2021-01-24 18:50:58.782864	0.5892857142857143	meta_feats,sc_turns,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:50:59.227992	0.5813492063492063	meta_feats,sc_turns,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:50:59.595037	0.4265873015873016	meta_feats,sc_messages,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:00.104886	0.5396825396825397	meta_feats,sc_messages,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:00.499009	0.5396825396825397	meta_feats,sc_messages,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:00.912475	0.6091269841269842	meta_feats,sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:01.351193	0.6031746031746033	meta_feats,sc_messages,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:01.763375	0.6091269841269842	meta_feats,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:02.163616	0.5178571428571428	meta_feats,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_depth=10, max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': 10}
+2021-01-24 18:51:02.557121	0.5813492063492063	meta_feats,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:02.932391	0.7380952380952381	meta_feats,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:03.404599	0.5873015873015872	meta_feats,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:03.838489	0.5952380952380953	meta_feats,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:04.332097	0.48214285714285715	meta_feats,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:04.737593	0.3829365079365079	meta_feats,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:05.142956	0.6527777777777778	meta_feats,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:05.609727	0.6944444444444444	meta_feats,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:05.933511	0.44841269841269843	annotation,sc_turns,sc_messages	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:06.294734	0.39087301587301587	annotation,sc_turns,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:06.735233	0.44841269841269843	annotation,sc_turns,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:07.113524	0.6746031746031745	annotation,sc_turns,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:07.671597	0.6805555555555556	annotation,sc_turns,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:08.083589	0.625	annotation,sc_turns,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:08.456906	0.4265873015873016	annotation,sc_messages,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:08.904832	0.39880952380952384	annotation,sc_messages,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:09.288949	0.5396825396825397	annotation,sc_messages,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:09.657943	0.44642857142857145	annotation,sc_messages,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:10.071005	0.5535714285714286	annotation,sc_messages,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:10.506470	0.3333333333333333	annotation,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:10.911464	0.3888888888888889	annotation,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:11.355924	0.5813492063492063	annotation,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:11.831198	0.5952380952380953	annotation,solution_participation,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:12.358922	0.42460317460317454	annotation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:12.820871	0.6448412698412699	annotation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:13.321681	0.7103174603174602	annotation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:13.825983	0.5873015873015872	annotation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:14.404312	0.503968253968254	annotation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:15.056570	0.48214285714285715	annotation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:15.482302	0.41269841269841273	sc_turns,sc_messages,solution_participation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:16.177578	0.44642857142857145	sc_turns,sc_messages,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:16.671110	0.2996031746031746	sc_turns,sc_messages,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:18.281206	0.5238095238095238	sc_turns,sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:19.237817	0.6388888888888888	sc_turns,sc_messages,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:19.888320	0.6031746031746033	sc_turns,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:20.487190	0.49603174603174605	sc_turns,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:21.243281	0.46825396825396826	sc_turns,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:22.223438	0.6388888888888888	sc_turns,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:23.033562	0.5753968253968254	sc_turns,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:23.589372	0.5813492063492063	sc_turns,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:24.097123	0.5099206349206349	sc_turns,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:24.577679	0.6666666666666667	sc_turns,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:25.028327	0.740079365079365	sc_turns,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:25.526037	0.5813492063492063	sc_turns,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:25.956180	0.48412698412698413	sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:26.422496	0.5376984126984128	sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:26.824109	0.46031746031746035	sc_messages,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:27.337583	0.6666666666666667	sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:28.018211	0.47420634920634924	sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:28.576175	0.5317460317460317	sc_messages,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:29.218572	0.49007936507936506	sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:29.710097	0.48412698412698413	sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:30.267364	0.5952380952380953	sc_messages,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:30.849649	0.5257936507936508	sc_messages,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:31.530585	0.43253968253968256	solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:32.092651	0.6309523809523809	solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:32.623295	0.7242063492063492	solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:33.044866	0.5813492063492063	solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:33.512124	0.751984126984127	solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:33.946101	0.5813492063492063	solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:34.444687	0.5535714285714286	annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:35.023767	0.6587301587301587	annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:35.584145	0.6170634920634921	annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:36.065062	0.43253968253968256	annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:36.434877	0.4107142857142857	meta_feats,annotation,sc_turns,sc_messages	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:36.834352	0.41269841269841273	meta_feats,annotation,sc_turns,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:37.286861	0.47420634920634924	meta_feats,annotation,sc_turns,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:37.705718	0.3551587301587301	meta_feats,annotation,sc_turns,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:38.107371	0.40476190476190477	meta_feats,annotation,sc_turns,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:38.541384	0.625	meta_feats,annotation,sc_turns,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:38.947243	0.48809523809523814	meta_feats,annotation,sc_messages,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:39.375921	0.6746031746031745	meta_feats,annotation,sc_messages,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:39.745516	0.49603174603174605	meta_feats,annotation,sc_messages,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:40.178404	0.6091269841269842	meta_feats,annotation,sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:40.607843	0.751984126984127	meta_feats,annotation,sc_messages,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:41.229648	0.46230158730158727	meta_feats,annotation,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:41.678687	0.5456349206349207	meta_feats,annotation,solution_participation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:42.124947	0.5813492063492063	meta_feats,annotation,solution_participation,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:42.549462	0.49007936507936506	meta_feats,annotation,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:42.984193	0.41269841269841273	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:43.501854	0.5595238095238095	meta_feats,annotation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:43.978950	0.5158730158730159	meta_feats,annotation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:44.444120	0.6607142857142857	meta_feats,annotation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:44.879038	0.5535714285714286	meta_feats,annotation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:45.378745	0.5317460317460317	meta_feats,annotation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:45.721897	0.39880952380952384	meta_feats,sc_turns,sc_messages,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:46.176628	0.46825396825396826	meta_feats,sc_turns,sc_messages,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:46.736525	0.44642857142857145	meta_feats,sc_turns,sc_messages,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:47.326297	0.44642857142857145	meta_feats,sc_turns,sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:47.757875	0.5178571428571428	meta_feats,sc_turns,sc_messages,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:48.168853	0.5615079365079365	meta_feats,sc_turns,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:48.579841	0.5615079365079365	meta_feats,sc_turns,solution_participation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:48.948962	0.5734126984126984	meta_feats,sc_turns,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:49.345507	0.7301587301587301	meta_feats,sc_turns,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:49.811263	0.5892857142857143	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:50.226327	0.5317460317460317	meta_feats,sc_turns,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:50.672781	0.503968253968254	meta_feats,sc_turns,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:51.079200	0.6031746031746033	meta_feats,sc_turns,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:51.509473	0.7301587301587301	meta_feats,sc_turns,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:52.001779	0.48214285714285715	meta_feats,sc_turns,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:52.486259	0.369047619047619	meta_feats,sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:52.888869	0.5396825396825397	meta_feats,sc_messages,solution_participation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:53.322327	0.46230158730158727	meta_feats,sc_messages,solution_participation,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:53.729099	0.5535714285714286	meta_feats,sc_messages,solution_participation,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:54.212435	0.39880952380952384	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:54.681271	0.5952380952380953	meta_feats,sc_messages,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:55.178618	0.4107142857142857	meta_feats,sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:55.592562	0.48809523809523814	meta_feats,sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:56.018766	0.45436507936507936	meta_feats,sc_messages,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:56.506495	0.5535714285714286	meta_feats,sc_messages,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:56.983203	0.5396825396825397	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:57.528836	0.5257936507936508	meta_feats,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:58.037170	0.6170634920634921	meta_feats,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:58.512963	0.5476190476190477	meta_feats,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:58.964718	0.6388888888888888	meta_feats,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:51:59.405594	0.744047619047619	meta_feats,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:51:59.912636	0.49007936507936506	meta_feats,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:00.411653	0.5952380952380953	meta_feats,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:00.931076	0.5753968253968254	meta_feats,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:01.407429	0.6805555555555556	meta_feats,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:01.772995	0.44047619047619047	annotation,sc_turns,sc_messages,solution_participation	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:02.219350	0.44642857142857145	annotation,sc_turns,sc_messages,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:02.622244	0.44841269841269843	annotation,sc_turns,sc_messages,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:03.063409	0.4107142857142857	annotation,sc_turns,sc_messages,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:03.495056	0.46825396825396826	annotation,sc_turns,sc_messages,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:03.948813	0.625	annotation,sc_turns,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:04.365784	0.49801587301587297	annotation,sc_turns,solution_participation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:04.760819	0.744047619047619	annotation,sc_turns,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:05.212363	0.6527777777777778	annotation,sc_turns,solution_participation,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:05.669410	0.46031746031746035	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:06.142696	0.44841269841269843	annotation,sc_turns,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:06.667101	0.6805555555555556	annotation,sc_turns,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:07.104174	0.5376984126984128	annotation,sc_turns,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:07.585215	0.5813492063492063	annotation,sc_turns,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:08.020930	0.5317460317460317	annotation,sc_turns,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:08.491675	0.49801587301587297	annotation,sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:08.861349	0.43452380952380953	annotation,sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:09.250642	0.503968253968254	annotation,sc_messages,solution_participation,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:09.671011	0.6944444444444444	annotation,sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:10.142439	0.3551587301587301	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:10.626442	0.39880952380952384	annotation,sc_messages,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:11.224045	0.5892857142857143	annotation,sc_messages,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:11.736599	0.49007936507936506	annotation,sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:12.169095	0.5119047619047619	annotation,sc_messages,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:12.601837	0.5972222222222222	annotation,sc_messages,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:13.067566	0.6388888888888888	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:13.528394	0.37698412698412703	annotation,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:14.046809	0.6170634920634921	annotation,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:14.488597	0.5238095238095238	annotation,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:14.919023	0.5734126984126984	annotation,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:15.377933	0.6031746031746033	annotation,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:15.840946	0.6091269841269842	annotation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:16.375123	0.6805555555555556	annotation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:16.922238	0.6825396825396826	annotation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:17.436598	0.6031746031746033	annotation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:17.857328	0.5476190476190477	sc_turns,sc_messages,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:18.296877	0.44047619047619047	sc_turns,sc_messages,solution_participation,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:18.696928	0.5535714285714286	sc_turns,sc_messages,solution_participation,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:19.085247	0.5178571428571428	sc_turns,sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:19.544352	0.40674603174603174	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:19.985584	0.48412698412698413	sc_turns,sc_messages,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:20.478790	0.49603174603174605	sc_turns,sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:20.891164	0.48214285714285715	sc_turns,sc_messages,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:21.425739	0.625	sc_turns,sc_messages,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:21.876411	0.5535714285714286	sc_turns,sc_messages,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:22.362218	0.49007936507936506	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:22.860629	0.5813492063492063	sc_turns,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:23.338038	0.5892857142857143	sc_turns,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:23.750497	0.5099206349206349	sc_turns,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:24.177305	0.6666666666666667	sc_turns,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:24.636595	0.626984126984127	sc_turns,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:25.148427	0.44642857142857145	sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:25.624463	0.5892857142857143	sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:26.159057	0.751984126984127	sc_turns,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:26.748788	0.7162698412698413	sc_turns,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:27.279974	0.5317460317460317	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:27.795441	0.5376984126984128	sc_messages,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:28.323321	0.6527777777777778	sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:28.760718	0.5099206349206349	sc_messages,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:29.199826	0.7380952380952381	sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:29.686875	0.5396825396825397	sc_messages,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:30.191840	0.48214285714285715	sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:30.716603	0.5892857142857143	sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:31.240085	0.6309523809523809	sc_messages,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:31.751013	0.5476190476190477	sc_messages,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:32.284784	0.503968253968254	solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:32.805819	0.5952380952380953	solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:33.351729	0.49007936507936506	solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:33.833738	0.5297619047619048	solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:34.384135	0.46825396825396826	annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:34.742138	0.6527777777777778	meta_feats,annotation,sc_turns,sc_messages,solution_participation	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:35.175501	0.29365079365079366	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:35.608340	0.5317460317460317	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:35.993301	0.6170634920634921	meta_feats,annotation,sc_turns,sc_messages,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:36.436860	0.7162698412698413	meta_feats,annotation,sc_turns,sc_messages,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:36.875441	0.49007936507936506	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:37.292971	0.45436507936507936	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:37.732897	0.49007936507936506	meta_feats,annotation,sc_turns,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:38.220339	0.7023809523809524	meta_feats,annotation,sc_turns,solution_participation,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:38.745726	0.40476190476190477	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:39.236015	0.43253968253968256	meta_feats,annotation,sc_turns,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:39.754225	0.5595238095238095	meta_feats,annotation,sc_turns,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:40.200804	0.46825396825396826	meta_feats,annotation,sc_turns,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:40.651129	0.6329365079365079	meta_feats,annotation,sc_turns,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:41.097816	0.5178571428571428	meta_feats,annotation,sc_turns,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:41.568225	0.46825396825396826	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:41.961767	0.3134920634920635	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:42.427576	0.6805555555555556	meta_feats,annotation,sc_messages,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:42.823471	0.6527777777777778	meta_feats,annotation,sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:43.310350	0.5337301587301587	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:43.779695	0.5317460317460317	meta_feats,annotation,sc_messages,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:44.303902	0.44642857142857145	meta_feats,annotation,sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:44.730079	0.6865079365079365	meta_feats,annotation,sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:45.172611	0.7103174603174602	meta_feats,annotation,sc_messages,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:45.698351	0.49007936507936506	meta_feats,annotation,sc_messages,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:46.195957	0.6746031746031745	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:46.702112	0.44642857142857145	meta_feats,annotation,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:47.366588	0.6170634920634921	meta_feats,annotation,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:47.785700	0.6091269841269842	meta_feats,annotation,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:48.314388	0.6388888888888888	meta_feats,annotation,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:48.776518	0.6805555555555556	meta_feats,annotation,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:49.252622	0.48412698412698413	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:49.758586	0.46825396825396826	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:50.276590	0.7023809523809524	meta_feats,annotation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:50.748225	0.5257936507936508	meta_feats,annotation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:51.165769	0.48214285714285715	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:51.548050	0.43452380952380953	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:51.968860	0.44642857142857145	meta_feats,sc_turns,sc_messages,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:52.442060	0.5396825396825397	meta_feats,sc_turns,sc_messages,solution_participation,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:52.891558	0.44841269841269843	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:53.346419	0.5317460317460317	meta_feats,sc_turns,sc_messages,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:53.807220	0.6607142857142857	meta_feats,sc_turns,sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:54.233259	0.48214285714285715	meta_feats,sc_turns,sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:54.666991	0.5317460317460317	meta_feats,sc_turns,sc_messages,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:55.129476	0.46031746031746035	meta_feats,sc_turns,sc_messages,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:55.585835	0.5317460317460317	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:56.032496	0.5456349206349207	meta_feats,sc_turns,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:56.530372	0.7242063492063492	meta_feats,sc_turns,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:56.964931	0.5734126984126984	meta_feats,sc_turns,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:57.484878	0.6884920634920635	meta_feats,sc_turns,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:57.935892	0.5396825396825397	meta_feats,sc_turns,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:58.487111	0.5178571428571428	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:58.982353	0.5456349206349207	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:52:59.535720	0.5456349206349207	meta_feats,sc_turns,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:52:59.988896	0.49603174603174605	meta_feats,sc_turns,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:00.454029	0.5674603174603174	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:00.923825	0.4424603174603174	meta_feats,sc_messages,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:01.416533	0.503968253968254	meta_feats,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:01.941901	0.48809523809523814	meta_feats,sc_messages,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:02.434184	0.5892857142857143	meta_feats,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:02.915681	0.44841269841269843	meta_feats,sc_messages,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:03.392502	0.47420634920634924	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:03.932433	0.503968253968254	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:04.452343	0.5396825396825397	meta_feats,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:04.950423	0.6031746031746033	meta_feats,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:05.433521	0.6011904761904762	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:05.975507	0.6527777777777778	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:06.497642	0.7876984126984128	meta_feats,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:06.991193	0.6091269841269842	meta_feats,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:07.601828	0.49603174603174605	meta_feats,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:08.038345	0.5674603174603174	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:08.430303	0.3412698412698413	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:08.816161	0.6031746031746033	annotation,sc_turns,sc_messages,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:09.300966	0.5952380952380953	annotation,sc_turns,sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:09.795059	0.503968253968254	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:10.298770	0.5277777777777778	annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:10.781740	0.5337301587301587	annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:11.246640	0.375	annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:11.695761	0.5456349206349207	annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:12.135565	0.6587301587301587	annotation,sc_turns,sc_messages,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:12.601759	0.3829365079365079	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:13.091992	0.5535714285714286	annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:13.562964	0.751984126984127	annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:13.972255	0.5019841269841271	annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:14.415542	0.6666666666666667	annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:14.884110	0.6448412698412699	annotation,sc_turns,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:15.393452	0.5238095238095238	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:15.884305	0.5595238095238095	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:16.381884	0.5019841269841271	annotation,sc_turns,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:16.827452	0.46230158730158727	annotation,sc_turns,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:17.525797	0.46031746031746035	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:18.004036	0.44841269841269843	annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:18.547029	0.47619047619047616	annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:18.968836	0.36309523809523814	annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:19.419636	0.5595238095238095	annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:19.841995	0.5396825396825397	annotation,sc_messages,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:20.344651	0.5515873015873016	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:20.888466	0.5952380952380953	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:21.544192	0.5099206349206349	annotation,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:22.034891	0.6944444444444444	annotation,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:22.572588	0.503968253968254	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:23.065492	0.6170634920634921	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:23.583858	0.6309523809523809	annotation,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:24.138783	0.6587301587301587	annotation,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:24.713497	0.5595238095238095	annotation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:25.170099	0.48214285714285715	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:25.646322	0.40476190476190477	sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:26.154033	0.6388888888888888	sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:26.833698	0.49007936507936506	sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:27.574556	0.5813492063492063	sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:28.232604	0.5813492063492063	sc_turns,sc_messages,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:29.373215	0.49007936507936506	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:30.032183	0.7023809523809524	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:30.692245	0.5912698412698413	sc_turns,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:31.381875	0.5238095238095238	sc_turns,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:32.054734	0.49603174603174605	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:32.801501	0.5813492063492063	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:33.672821	0.5317460317460317	sc_turns,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:34.302666	0.5317460317460317	sc_turns,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:34.864162	0.5753968253968254	sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:35.508471	0.4523809523809524	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:36.054698	0.6607142857142857	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:36.727429	0.49007936507936506	sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:37.542700	0.6944444444444444	sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:38.071427	0.6170634920634921	sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:38.645996	0.5317460317460317	solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:39.087372	0.4424603174603174	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:39.480008	0.46825396825396826	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:39.888939	0.8154761904761905	meta_feats,annotation,sc_turns,sc_messages,solution_participation,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:40.313211	0.5456349206349207	meta_feats,annotation,sc_turns,sc_messages,solution_participation,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:40.794057	0.44642857142857145	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:41.290388	0.503968253968254	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:41.839457	0.6607142857142857	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:42.299101	0.5813492063492063	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:42.746811	0.6884920634920635	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:43.209442	0.8154761904761905	meta_feats,annotation,sc_turns,sc_messages,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:43.662291	0.46031746031746035	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:44.172287	0.5099206349206349	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:44.678207	0.5396825396825397	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:45.100155	0.5178571428571428	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:45.638925	0.5099206349206349	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:46.088788	0.45436507936507936	meta_feats,annotation,sc_turns,solution_participation,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:46.687790	0.3412698412698413	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:47.285033	0.744047619047619	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:47.822074	0.6091269841269842	meta_feats,annotation,sc_turns,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:48.308054	0.6448412698412699	meta_feats,annotation,sc_turns,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:48.800103	0.3412698412698413	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:49.378241	0.49007936507936506	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:49.873561	0.46230158730158727	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:50.303941	0.46825396825396826	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:50.760749	0.5873015873015872	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:51.217260	0.6170634920634921	meta_feats,annotation,sc_messages,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:51.732594	0.5535714285714286	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:52.315188	0.619047619047619	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:52.843740	0.45436507936507936	meta_feats,annotation,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:53.409885	0.49603174603174605	meta_feats,annotation,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:53.923899	0.45436507936507936	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:54.454130	0.5753968253968254	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:54.985567	0.40476190476190477	meta_feats,annotation,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:55.476036	0.49007936507936506	meta_feats,annotation,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:56.025644	0.49801587301587297	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:56.515413	0.5813492063492063	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:56.995679	0.46825396825396826	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:57.562289	0.5257936507936508	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:58.017464	0.5178571428571428	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:58.475533	0.43253968253968256	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:58.908391	0.5317460317460317	meta_feats,sc_turns,sc_messages,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:53:59.425807	0.46031746031746035	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:53:59.932036	0.5972222222222222	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:00.625620	0.6170634920634921	meta_feats,sc_turns,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:01.156632	0.5337301587301587	meta_feats,sc_turns,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:01.778917	0.44642857142857145	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:02.375420	0.6746031746031745	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:02.888119	0.5178571428571428	meta_feats,sc_turns,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:03.392128	0.6587301587301587	meta_feats,sc_turns,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:03.957107	0.6170634920634921	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:04.454963	0.4662698412698413	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:04.978088	0.6884920634920635	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:05.542591	0.5456349206349207	meta_feats,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:06.013374	0.49603174603174605	meta_feats,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:06.577470	0.625	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:07.153442	0.5952380952380953	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:07.680303	0.49007936507936506	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:08.208576	0.49007936507936506	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:08.809046	0.6309523809523809	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:09.491549	0.6031746031746033	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:10.213585	0.6111111111111112	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:10.990117	0.744047619047619	annotation,sc_turns,sc_messages,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:12.094130	0.39682539682539686	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:13.196254	0.5813492063492063	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:14.090140	0.6031746031746033	annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:14.725692	0.6448412698412699	annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:15.937268	0.5099206349206349	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:16.964799	0.5317460317460317	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:18.146723	0.6884920634920635	annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:19.147853	0.6388888888888888	annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:20.339387	0.503968253968254	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:21.164428	0.5317460317460317	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:22.408225	0.5019841269841271	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:23.969457	0.49801587301587297	annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:25.970025	0.5178571428571428	annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:27.874939	0.46230158730158727	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:29.112905	0.5813492063492063	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:30.032754	0.5535714285714286	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:30.850750	0.5595238095238095	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:31.684680	0.5972222222222222	sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:32.379063	0.625	sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:33.249126	0.503968253968254	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:34.396165	0.5952380952380953	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:35.463838	0.5396825396825397	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:36.417292	0.5535714285714286	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:37.084766	0.5178571428571428	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:37.948605	0.6388888888888888	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:38.580408	0.41269841269841273	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:39.147448	0.6726190476190476	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:39.695624	0.5238095238095238	meta_feats,annotation,sc_turns,sc_messages,solution_participation,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:40.345564	0.45436507936507936	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:41.258106	0.6468253968253969	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:42.045307	0.40476190476190477	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:42.691253	0.5238095238095238	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:43.435173	0.39682539682539686	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:44.212186	0.625	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:44.835066	0.46230158730158727	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:45.544031	0.5257936507936508	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:46.303699	0.49007936507936506	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:46.911990	0.4166666666666667	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:47.597754	0.5595238095238095	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:48.394225	0.36309523809523814	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:49.048193	0.751984126984127	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:49.681096	0.44841269841269843	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:50.293456	0.6666666666666667	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:50.784554	0.44047619047619047	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:51.445342	0.44047619047619047	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:52.030597	0.5674603174603174	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:52.678643	0.49603174603174605	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:53.358414	0.5674603174603174	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:54.168739	0.5178571428571428	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:55.129048	0.4107142857142857	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:56.320548	0.625	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:57.229339	0.5178571428571428	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:54:58.013855	0.7301587301587301	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:58.589387	0.5813492063492063	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:59.164127	0.48214285714285715	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:54:59.718445	0.7658730158730158	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:00.280024	0.41269841269841273	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:55:00.821001	0.5535714285714286	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:01.393347	0.49603174603174605	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:01.925719	0.6607142857142857	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:55:02.513386	0.5119047619047619	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:03.028314	0.5535714285714286	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:03.619740	0.48214285714285715	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:04.233549	0.5535714285714286	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:04.806239	0.5674603174603174	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}
+2021-01-24 18:55:05.373087	0.5813492063492063	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:05.970598	0.5952380952380953	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	"{'clf': DecisionTreeClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__max_depth': None}"
+2021-01-24 18:55:06.503034	0.6805555555555556	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,fast_text,fast_text_additional	{'clf': DecisionTreeClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__max_depth': None}

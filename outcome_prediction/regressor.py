@@ -4,9 +4,10 @@ from datetime import datetime
 from copy import copy
 from scipy import stats
 
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.neighbors import KNeighborsRegressor
+
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, BayesianRidge
-from sklearn.linear_model.tests.test_sgd import SGDClassifier
 from sklearn.metrics import classification_report, r2_score, mean_squared_error
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler, MaxAbsScaler
@@ -26,7 +27,7 @@ FEATURE_MAPS = {
     'annotation_features': '../features/annotation.tsv',
     'dialogue_metadata': '../features/wason_stats.tsv',
     'text_features': '/',
-    'solution_participation': '../features/solution_participation.tsv',
+    'solution_participation': '../features/solution_participation_automatic.tsv',
     'annotation_tfidf_type': '../features/annotations_tf_idf_2_5type.tsv',
     'annotation_tfidf_target': '../features/annotations_tf_idf_2_5target.tsv',
     'annotation_tfidf_both': '../features/annotations_tf_idf_2_5both.tsv',
@@ -37,7 +38,7 @@ FEATURE_MAPS = {
 
 if __name__ == '__main__':
     # 1. Read Labels
-    raw_data = read_wason_dump('../data/all/')
+    raw_data = read_wason_dump('../data/all_data_20210107/')
     Y_raw = get_y_regresion(raw_data)
 
     # 2. Get features
@@ -52,7 +53,7 @@ if __name__ == '__main__':
     pos_cor = get_features(FEATURE_MAPS, 'positive_correlations')
 
     feature_combinations = {
-        # 'meta_feats': meta_feats,
+        'meta_feats': meta_feats,
         # 'annotation': annotation,
         'sc_turns': sc_turns,
         'sc_messages': sc_messages,
@@ -60,7 +61,7 @@ if __name__ == '__main__':
         # # 'annotation_tf_type': tf_type,
         # # 'annotation_tf_target': tf_target,
         # 'annotation_tf_both': tf_both,
-        'pos_cor': pos_cor
+        # 'pos_cor': pos_cor
     }
     combs = []
 
@@ -72,7 +73,7 @@ if __name__ == '__main__':
         print(comb)
         merged_feats = merge_feauters([feature_combinations[c] for c in comb])
 
-        X, Y = features_labels_to_xy(merged_feats, Y_raw, annotation.keys())
+        X, Y = features_labels_to_xy(merged_feats, Y_raw)
 
         # 4. Create pipeline
 
@@ -81,11 +82,11 @@ if __name__ == '__main__':
             ('clf', LinearRegression()),
         ])
         parameters = [
-            # {
-            #     'clf': (LinearRegression(),),
-            #     'clf__normalize': (True, False),
-            #     # 'clf__random_state': (42,)
-            # },
+            {
+                'clf': (LinearRegression(),),
+                'clf__normalize': (True, False),
+                # 'clf__random_state': (42,)
+            },
              {
                 'clf': (BayesianRidge(),),
                 'clf__n_iter': (300, 500),
@@ -106,6 +107,10 @@ if __name__ == '__main__':
                 'clf': (RandomForestRegressor(max_features='sqrt'),),
                 'clf__n_estimators': (1, 5, 10, 100, 300),
                 'clf__random_state': (42,)
+            },
+            {
+                'clf': (KNeighborsRegressor(),),
+                'clf__n_neighbors': (3, 5, 7, 9),
             },
         ]
         grid_search = GridSearchCV(pipeline, parameters, cv=5)

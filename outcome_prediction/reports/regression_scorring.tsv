@@ -1,0 +1,617 @@
+Date	Features	PipelineConfig	Score
+2020-12-16 17:21:18.120680	meta_feats	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=1e-07,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 1e-07, 'clf__kernel': 'linear'}"	0.06723592308608756
+2020-12-16 17:22:42.992346	meta_feats	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=1e-07,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 1e-07, 'clf__kernel': 'linear'}"	0.06723592308608756
+2020-12-16 17:23:20.746570	annotation	"{'clf': SVR(C=0.01, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.01,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.01, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}"	0.05917837717393686
+2020-12-16 17:24:57.548712	meta_feats	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 1e-06, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06221895475337527
+2020-12-16 17:25:29.825092	annotation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06296528064862497
+2020-12-16 17:26:15.579558	sc_turns	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06068981944444445
+2020-12-16 17:26:48.814008	sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}"	0.0624081780981409
+2020-12-16 17:27:23.921273	solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06267974789592587
+2020-12-16 17:28:25.722269	annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06027241666666666
+2020-12-16 17:29:05.819536	meta_feats,annotation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06533420654028378
+2020-12-16 17:29:50.273836	meta_feats,sc_turns	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 1e-06, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06525785774248793
+2020-12-16 17:30:30.630363	meta_feats,sc_messages	"{'clf': BayesianRidge(alpha_1=0.0001, alpha_2=1e-06, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 0.0001, 'clf__alpha_2': 1e-06, 'clf__lambda_1': 1e-06, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06353463979397386
+2020-12-16 17:31:02.855327	meta_feats,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.07006423611111112
+2020-12-16 17:33:36.071751	meta_feats,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06140653055555557
+2020-12-16 17:35:40.586551	annotation,sc_turns	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.0634115890277778
+2020-12-16 17:36:07.797158	annotation,sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-05, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-05, 'clf__n_iter': 300}"	0.06279258241027208
+2020-12-16 17:36:51.424694	annotation,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06455844791666666
+2020-12-16 17:37:23.003012	annotation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.06760486111111111
+2020-12-16 17:37:48.035291	sc_turns,sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}"	0.06201572970166521
+2020-12-16 17:39:43.543159	sc_turns,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.05974112819444444
+2020-12-16 17:41:45.804196	sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.061979376666666655
+2020-12-16 17:42:14.878214	sc_messages,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06275281166749033
+2020-12-16 17:44:20.042380	sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06300550083333335
+2020-12-16 17:47:00.678134	solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06306534347222223
+2020-12-16 17:47:34.934715	meta_feats,annotation,sc_turns	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06550010870506515
+2020-12-16 17:48:01.310638	meta_feats,annotation,sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06491558730295696
+2020-12-16 17:48:46.407125	meta_feats,annotation,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}"	0.06486098359713367
+2020-12-16 17:49:22.191577	meta_feats,annotation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.06367500000000001
+2020-12-16 17:49:55.539254	meta_feats,sc_turns,sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06399479934902491
+2020-12-16 17:50:22.258268	meta_feats,sc_turns,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-05, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-05, 'clf__n_iter': 300}"	0.0646210881099604
+2020-12-16 17:53:03.374728	meta_feats,sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.062307487777777795
+2020-12-16 17:53:35.813339	meta_feats,sc_messages,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=5, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 5, 'clf__random_state': 42}"	0.0651375
+2020-12-16 17:57:21.531253	meta_feats,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06148132111111111
+2020-12-16 18:00:10.807642	meta_feats,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.061559805972222215
+2020-12-16 18:00:52.108350	annotation,sc_turns,sc_messages	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06484178819444444
+2020-12-16 18:02:37.594119	annotation,sc_turns,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06148579819444446
+2020-12-16 18:04:29.854148	annotation,sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06219836736111112
+2020-12-16 18:04:56.117571	annotation,sc_messages,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06266254599567284
+2020-12-16 18:06:42.674434	annotation,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.062419158611111115
+2020-12-16 18:07:26.064275	annotation,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06582875694444444
+2020-12-16 18:07:51.560802	sc_turns,sc_messages,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06281673641034778
+2020-12-16 18:08:33.878657	sc_turns,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06165738541666666
+2020-12-16 18:09:00.006548	sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=5, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 5, 'clf__random_state': 42}"	0.0679375
+2020-12-16 18:10:46.180887	sc_messages,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06340134194444444
+2020-12-16 18:11:12.539528	meta_feats,annotation,sc_turns,sc_messages	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=0.0001, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 0.0001, 'clf__n_iter': 300}"	0.06490054615068576
+2020-12-16 18:11:39.638760	meta_feats,annotation,sc_turns,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.063428125
+2020-12-16 18:13:26.955767	meta_feats,annotation,sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.0611557898611111
+2020-12-16 18:13:55.555636	meta_feats,annotation,sc_messages,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}"	0.06518511604814335
+2020-12-16 18:15:42.759442	meta_feats,annotation,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06439541833333334
+2020-12-16 18:16:24.509804	meta_feats,annotation,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.0651431388888889
+2020-12-16 18:18:12.631725	meta_feats,sc_turns,sc_messages,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06154735527777779
+2020-12-16 18:20:36.447109	meta_feats,sc_turns,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06240342694444442
+2020-12-16 18:21:23.644917	meta_feats,sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06108586458333333
+2020-12-16 18:23:27.135872	meta_feats,sc_messages,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06278739374999998
+2020-12-16 18:24:16.221893	annotation,sc_turns,sc_messages,solution_participation	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06895995486111112
+2020-12-16 18:26:18.608522	annotation,sc_turns,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06349526041666667
+2020-12-16 18:28:19.944296	annotation,sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06111248236111111
+2020-12-16 18:30:25.742980	annotation,sc_messages,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.062330038472222224
+2020-12-16 18:32:29.005819	sc_turns,sc_messages,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 500, 'clf__random_state': 42}"	0.06312767083333334
+2020-12-16 18:33:01.637387	meta_feats,annotation,sc_turns,sc_messages,solution_participation	"{'clf': BayesianRidge(alpha_1=1e-06, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.0001, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 0.0001, 'clf__lambda_1': 0.0001, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}"	0.06524899511105313
+2020-12-16 20:17:54.222253	meta_feats	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}"	0.06723592308608756
+2020-12-16 20:18:03.487022	annotation	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.06074872727828182
+2020-12-16 20:18:28.693644	sc_turns	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06068981944444445
+2020-12-16 20:18:35.846755	sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901390451530098
+2020-12-16 20:18:42.377162	solution_participation	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059172339315120545
+2020-12-16 20:18:48.212749	annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901393590462962
+2020-12-16 20:18:53.188724	meta_feats,annotation	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.0593654219206276
+2020-12-16 20:18:59.407124	meta_feats,sc_turns	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.0598697413884772
+2020-12-16 20:19:07.322242	meta_feats,sc_messages	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}"	0.06441720718253391
+2020-12-16 20:19:13.479894	meta_feats,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901390009145577
+2020-12-16 20:19:51.839588	meta_feats,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=300, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 300, 'clf__random_state': 42}"	0.0606333063271605
+2020-12-16 20:19:56.959171	annotation,sc_turns	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.05901406210669205
+2020-12-16 20:20:02.524273	annotation,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013907791716565
+2020-12-16 20:20:08.507069	annotation,solution_participation	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.1,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.1, 'clf__kernel': 'rbf'}"	0.05647651164002529
+2020-12-16 20:20:14.983526	annotation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.06760486111111111
+2020-12-16 20:20:22.356086	sc_turns,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013910749295996
+2020-12-16 20:20:28.320419	sc_turns,solution_participation	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059122739134744216
+2020-12-16 20:20:33.577450	sc_turns,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013954445367105
+2020-12-16 20:20:39.018100	sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901391007126535
+2020-12-16 20:20:44.474686	sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013959024987746
+2020-12-16 20:20:49.879827	solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013959141509156
+2020-12-16 20:20:55.024635	meta_feats,annotation,sc_turns	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05910565763109878
+2020-12-16 20:21:00.031607	meta_feats,annotation,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.01,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}"	0.05901365828285113
+2020-12-16 20:21:05.477486	meta_feats,annotation,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013898612490664
+2020-12-16 20:21:12.045578	meta_feats,annotation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.06367500000000001
+2020-12-16 20:21:17.868126	meta_feats,sc_turns,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013903480017386
+2020-12-16 20:21:23.816044	meta_feats,sc_turns,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901389633130341
+2020-12-16 20:22:01.759384	meta_feats,sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=300, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 300, 'clf__random_state': 42}"	0.06231734606481482
+2020-12-16 20:22:07.603016	meta_feats,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901388853516219
+2020-12-16 20:22:14.088142	meta_feats,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}"	0.0593582085642647
+2020-12-16 20:22:21.057747	meta_feats,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013961412832605
+2020-12-16 20:22:26.250165	annotation,sc_turns,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901390755054336
+2020-12-16 20:22:31.837810	annotation,sc_turns,solution_participation	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.1,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.1, 'clf__kernel': 'rbf'}"	0.055555660698564
+2020-12-16 20:22:37.007490	annotation,sc_turns,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013933631902625
+2020-12-16 20:22:42.570187	annotation,sc_messages,solution_participation	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.1,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.1, 'clf__kernel': 'rbf'}"	0.056659860830619316
+2020-12-16 20:22:47.902036	annotation,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.0590139433297652
+2020-12-16 20:23:02.215031	annotation,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06582875694444444
+2020-12-16 20:23:07.969306	sc_turns,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901391563170557
+2020-12-16 20:23:13.270293	sc_turns,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013978704448265
+2020-12-16 20:23:19.087785	sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=5, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 5, 'clf__random_state': 42}"	0.0679375
+2020-12-16 20:23:24.201209	sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901397848634029
+2020-12-16 20:23:29.822361	meta_feats,annotation,sc_turns,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.01,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}"	0.05901389807458687
+2020-12-16 20:23:35.004679	meta_feats,annotation,sc_turns,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013890875994374
+2020-12-16 20:24:07.336060	meta_feats,annotation,sc_turns,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=300, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 300, 'clf__random_state': 42}"	0.060097190586419755
+2020-12-16 20:24:12.599245	meta_feats,annotation,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901388945850638
+2020-12-16 20:24:18.134713	meta_feats,annotation,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059322967676058116
+2020-12-16 20:24:32.407614	meta_feats,annotation,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.0651431388888889
+2020-12-16 20:24:37.822949	meta_feats,sc_turns,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901389033466261
+2020-12-16 20:24:43.326897	meta_feats,sc_turns,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901397196617781
+2020-12-16 20:24:57.500673	meta_feats,sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06108586458333333
+2020-12-16 20:25:02.957068	meta_feats,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901397329399823
+2020-12-16 20:25:08.384833	annotation,sc_turns,sc_messages,solution_participation	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.1,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.1, 'clf__kernel': 'rbf'}"	0.05725761810886018
+2020-12-16 20:25:13.583689	annotation,sc_turns,sc_messages,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013960544750346
+2020-12-16 20:25:19.063192	annotation,sc_turns,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901396616313843
+2020-12-16 20:25:24.334910	annotation,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901396523065934
+2020-12-16 20:25:29.784515	sc_turns,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901399855567047
+2020-12-16 20:25:35.393923	meta_feats,annotation,sc_turns,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901388291625479
+2020-12-16 20:26:06.830861	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=300, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 300, 'clf__random_state': 42}"	0.0632174000771605
+2020-12-16 20:26:21.988159	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06097898958333332
+2020-12-16 20:26:28.467071	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.0590139640769114
+2020-12-16 20:26:33.894693	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013991620224325
+2020-12-16 20:26:40.249035	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_both	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.06568784722222225
+2020-12-16 20:26:46.353244	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_both	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901397968673714
+2020-12-17 11:58:29.299516	sc_turns	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 100, 'clf__random_state': 42}"	0.06068981944444445
+2020-12-17 11:58:34.020439	sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901390451530098
+2020-12-17 11:58:39.312062	solution_participation	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059172339315120545
+2020-12-17 11:58:44.096567	pos_cor	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.01,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}"	0.05915127646736769
+2020-12-17 11:58:48.876478	sc_turns,sc_messages	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013910749295996
+2020-12-17 11:58:53.913317	sc_turns,solution_participation	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059122739134744216
+2020-12-17 11:58:58.496395	sc_turns,pos_cor	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.060109546931167934
+2020-12-17 11:59:03.995934	sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901391007126535
+2020-12-17 11:59:09.192414	sc_messages,pos_cor	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901390110858407
+2020-12-17 11:59:14.132759	solution_participation,pos_cor	"{'clf': SVR(C=0.5, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.5, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}"	0.05964004604290699
+2020-12-17 11:59:19.556475	sc_turns,sc_messages,solution_participation	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05901391563170557
+2020-12-17 11:59:24.515377	sc_turns,sc_messages,pos_cor	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.059013901447062415
+2020-12-17 11:59:30.864366	sc_turns,solution_participation,pos_cor	"{'clf': RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=10, n_jobs=None, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), 'clf__n_estimators': 10, 'clf__random_state': 42}"	0.07126319444444444
+2020-12-17 11:59:35.740174	sc_messages,solution_participation,pos_cor	"{'clf': SVR(C=0.0001, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='linear', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}"	0.05896648196811672
+2020-12-17 11:59:41.050090	sc_turns,sc_messages,solution_participation,pos_cor	"{'clf': SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0001,
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False), 'clf__C': 1.0, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}"	0.05909193181559383
+
+
+
+
+
+
+2021-01-12 11:07:40.902007	meta_feats	{'clf': SVR(C=0.5, gamma=0.0001, kernel='linear'), 'clf__C': 0.5, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}	0.037366496978618935
+2021-01-12 11:07:46.369011	sc_turns	{'clf': SVR(C=0.0001, gamma=0.0001), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}	0.038575806692976035
+2021-01-12 11:07:54.291455	sc_messages	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=10, random_state=42), 'clf__n_estimators': 10, 'clf__random_state': 42}	0.040025786356209146
+2021-01-12 11:07:58.986191	solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03923098345849589
+2021-01-12 11:08:03.797543	meta_feats,sc_turns	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03605666560490306
+2021-01-12 11:08:08.860613	meta_feats,sc_messages	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03452787087274808
+2021-01-12 11:08:14.305399	meta_feats,solution_participation	{'clf': SVR(gamma=0.001), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}	0.03883096237015731
+2021-01-12 11:09:20.225775	sc_turns,sc_messages	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=300, random_state=42), 'clf__n_estimators': 300, 'clf__random_state': 42}	0.03790952972624234
+2021-01-12 11:09:25.149544	sc_turns,solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03932096535319758
+2021-01-12 11:09:30.183646	sc_messages,solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03892292475378092
+2021-01-12 11:09:36.001141	meta_feats,sc_turns,sc_messages	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03349517152882782
+2021-01-12 11:09:41.062987	meta_feats,sc_turns,solution_participation	{'clf': SVR(gamma=0.001), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}	0.03840068172957999
+2021-01-12 11:11:08.075399	meta_feats,sc_messages,solution_participation	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=300, random_state=42), 'clf__n_estimators': 300, 'clf__random_state': 42}	0.03566386797774665
+
+
+
+
+
+
+2021-01-12 11:12:41.052783	meta_feats	{'clf': SVR(C=0.5, gamma=0.0001, kernel='linear'), 'clf__C': 0.5, 'clf__gamma': 0.0001, 'clf__kernel': 'linear'}	0.037366496978618935
+2021-01-12 11:12:46.006134	sc_turns	{'clf': SVR(C=0.0001, gamma=0.0001), 'clf__C': 0.0001, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}	0.038575806692976035
+2021-01-12 11:12:54.897246	sc_messages	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=10, random_state=42), 'clf__n_estimators': 10, 'clf__random_state': 42}	0.040025786356209146
+2021-01-12 11:12:59.687943	solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03923098345849589
+2021-01-12 11:13:05.701567	meta_feats,sc_turns	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03605666560490306
+2021-01-12 11:13:11.507765	meta_feats,sc_messages	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03452787087274808
+2021-01-12 11:13:16.466590	meta_feats,solution_participation	{'clf': SVR(gamma=0.001), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}	0.03883096237015731
+2021-01-12 11:14:41.857032	sc_turns,sc_messages	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=300, random_state=42), 'clf__n_estimators': 300, 'clf__random_state': 42}	0.03790952972624234
+2021-01-12 11:14:47.594993	sc_turns,solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03932096535319758
+2021-01-12 11:14:54.257971	sc_messages,solution_participation	{'clf': BayesianRidge(alpha_2=1e-05, lambda_1=1e-05), 'clf__alpha_1': 1e-06, 'clf__alpha_2': 1e-05, 'clf__lambda_1': 1e-05, 'clf__lambda_2': 1e-06, 'clf__n_iter': 300}	0.03892292475378092
+2021-01-12 11:15:00.566431	meta_feats,sc_turns,sc_messages	{'clf': SVR(gamma=0.01), 'clf__C': 1.0, 'clf__gamma': 0.01, 'clf__kernel': 'rbf'}	0.03349517152882782
+2021-01-12 11:15:06.075294	meta_feats,sc_turns,solution_participation	{'clf': SVR(gamma=0.001), 'clf__C': 1.0, 'clf__gamma': 0.001, 'clf__kernel': 'rbf'}	0.03840068172957999
+2021-01-12 11:16:19.807780	meta_feats,sc_messages,solution_participation	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=300, random_state=42), 'clf__n_estimators': 300, 'clf__random_state': 42}	0.03566386797774665
+2021-01-12 11:17:28.922965	sc_turns,sc_messages,solution_participation	{'clf': RandomForestRegressor(max_features='sqrt', n_estimators=300, random_state=42), 'clf__n_estimators': 300, 'clf__random_state': 42}	0.03724962975931113
+2021-01-12 11:17:55.139797	meta_feats,sc_turns,sc_messages,solution_participation	{'clf': RandomForestRegressor(max_features='sqrt', random_state=42), 'clf__n_estimators': 100, 'clf__random_state': 42}	0.034885666141456585

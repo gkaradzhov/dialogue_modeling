@@ -2,13 +2,14 @@ import os
 import csv
 from itertools import combinations
 
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
 from scipy import stats
 
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model.tests.test_sgd import SGDClassifier
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.linear_model import SGDClassifier
+from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
@@ -16,9 +17,10 @@ from sklearn.model_selection import GridSearchCV, LeaveOneOut
 from sklearn.linear_model import LogisticRegression
 
 from featurisers.raw_wason_featuriser import get_y
-from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy, logging
+from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy, logging, \
+    decision_tree_representation, decision_tree_stats
 from read_data import read_wason_dump
-
+from sklearn.tree import export_text
 import numpy as np
 
 FEATURE_MAPS = {
@@ -27,16 +29,32 @@ FEATURE_MAPS = {
     'annotation_features': '../features/annotation.tsv',
     'dialogue_metadata': '../features/wason_stats.tsv',
     'text_features': '/',
+    'positive_correlations': '../features/positive_correlation_features.tsv',
+    'solution_participation_automatic': '../features/solution_participation_automatic.tsv',
     'solution_participation': '../features/solution_participation.tsv',
-    'annotation_tfidf_type': '../features/annotations_tf_idf_2_5type.tsv',
-    'annotation_tfidf_target': '../features/annotations_tf_idf_2_5target.tsv',
-    'annotation_tfidf_both': '../features/annotations_tf_idf_2_5both.tsv',
-    'positive_correlations': '../features/positive_correlation_features.tsv'
+    'annotation_tfidf_type': '../features/annotations_tf_idf_type.tsv',
+    'annotation_tfidf_target': '../features/annotations_tf_idf_target.tsv',
+    'annotation_tfidf_type_target': '../features/annotations_tf_idf_type_target.tsv',
+    'annotation_tfidf_additional': '../features/annotations_tf_idf_additional.tsv',
+    'annotation_tfidf_everything': '../features/annotations_tf_idf_everything.tsv',
+    'annotation_sg_type': '../features/annotations_sg_type.tsv',
+    'annotation_sg_target': '../features/annotations_sg_target.tsv',
+    'annotation_sg_type_target': '../features/annotations_sg_type_target.tsv',
+    'annotation_sg_additional': '../features/annotations_sg_additional.tsv',
+    'annotation_sg_everything': '../features/annotations_sg_everything.tsv',
+    'nn_representation': '../features/nn_representation.tsv',
+    'random_vector': '../features/random_vector.tsv',
+    'fast_text': '../features/fast_text_representation_20.tsv',
+    'fast_text_additional': '../features/fast_text_representation_additional_20.tsv',
+    'fast_text_uni': '../features/fast_text_representation_20_uni.tsv',
+    'fast_text_additional_uni': '../features/fast_text_representation_additional_20_uni.tsv',
+    'fast_text_sc': '../features/fast_text_representation_sc.tsv',
+    'fast_text_stats': '../features/fast_text_representation_stats.tsv',
 }
 
 if __name__ == '__main__':
     # 1. Read Labels
-    raw_data = read_wason_dump('../data/all/')
+    raw_data = read_wason_dump('../data/all_data_20210107/')
     Y_raw = get_y(raw_data)
 
     # 2. Get features
@@ -44,22 +62,57 @@ if __name__ == '__main__':
     annotation = get_features(FEATURE_MAPS, 'annotation_features')
     sc_turns = get_features(FEATURE_MAPS, 'street_crowd_turns')
     sc_messages = get_features(FEATURE_MAPS, 'street_crowd_messages')
-    sol_part = get_features(FEATURE_MAPS, 'street_crowd_messages')
-    tf_type = get_features(FEATURE_MAPS, 'annotation_tfidf_type')
-    tf_target = get_features(FEATURE_MAPS, 'annotation_tfidf_target')
-    tf_both = get_features(FEATURE_MAPS, 'annotation_tfidf_both')
+    sol_part = get_features(FEATURE_MAPS, 'solution_participation')
     pos_cor = get_features(FEATURE_MAPS, 'positive_correlations')
 
+    tf_type = get_features(FEATURE_MAPS, 'annotation_tfidf_type')
+    tf_target = get_features(FEATURE_MAPS, 'annotation_tfidf_target')
+    tf_type_target = get_features(FEATURE_MAPS, 'annotation_tfidf_type_target')
+    tf_additional = get_features(FEATURE_MAPS, 'annotation_tfidf_additional')
+    tf_everything = get_features(FEATURE_MAPS, 'annotation_tfidf_everything')
+
+
+    sg_type = get_features(FEATURE_MAPS, 'annotation_sg_type')
+    sg_target = get_features(FEATURE_MAPS, 'annotation_sg_target')
+    sg_type_target = get_features(FEATURE_MAPS, 'annotation_sg_type_target')
+    sg_additional = get_features(FEATURE_MAPS, 'annotation_sg_additional')
+    sg_everything = get_features(FEATURE_MAPS, 'annotation_sg_everything')
+
+    nn_representation = get_features(FEATURE_MAPS, 'nn_representation')
+    random_vector = get_features(FEATURE_MAPS, 'random_vector')
+    fast_text_ngram = get_features(FEATURE_MAPS, 'fast_text')
+    fast_text_additional_ngram = get_features(FEATURE_MAPS, 'fast_text_additional')
+    fast_text_uni = get_features(FEATURE_MAPS, 'fast_text_uni')
+    fast_text_additional_uni = get_features(FEATURE_MAPS, 'fast_text_additional_uni')
+    fast_text_sc = get_features(FEATURE_MAPS, 'fast_text_sc')
+    fast_text_stats = get_features(FEATURE_MAPS, 'fast_text_stats')
+
     feature_combinations = {
-        # 'meta_feats': meta_feats,
-        # 'annotation': annotation,
-        'sc_turns': sc_turns,
-        'sc_messages': sc_messages,
+        'meta_feats': meta_feats,
+        'annotation': annotation,
+        # 'sc_turns': sc_turns,
+        # 'sc_messages': sc_messages,
         'solution_participation': sol_part,
-        # # 'annotation_tf_type': tf_type,
-        # # 'annotation_tf_target': tf_target,
-        'annotation_tf_both': tf_both,
-        'pos_cor': pos_cor
+        # 'annotation_tf_type': tf_type,
+        # 'annotation_tf_target': tf_target,
+        # 'annotation_tf_type_target': tf_type_target,
+        # 'annotation_tf_additional': tf_additional,
+        # 'annotation_tf_everything': tf_everything,
+
+        # 'annotation_sg_type': sg_type,
+        # 'annotation_sg_target': sg_target,
+        # 'annotation_sg_type_target': sg_type_target,
+        # 'annotation_sg_additional': sg_additional,
+        # 'annotation_sg_everything': sg_everything,
+        # 'nn_representation': nn_representation,
+        # 'random_vector': random_vector,
+        # 'fast_text_20_uni': fast_text_uni,
+        # 'fast_text_additional_20_uni': fast_text_additional_uni,
+        # 'fast_text_20_ngram': fast_text_ngram,
+        # 'fast_text_additional_20_ngram': fast_text_additional_ngram,
+        # 'fast_text_SC': fast_text_sc,
+        # 'fast_text_stats': fast_text_stats
+        # 'pos_cor': pos_cor
     }
     combs = []
 
@@ -67,12 +120,17 @@ if __name__ == '__main__':
         els = [list(x) for x in combinations(feature_combinations.keys(), i)]
         combs.extend(els)
 
+    # combs = [[f] for f in feature_combinations.keys()]
+    # combs = [['sc_messages', 'sc_turns'], ['annotation', 'sc_turns']]
+    counter = 0
     for comb in combs:
+        print("Combination: {}/{} ".format(counter, len(combs)))
+        counter += 1
         merged_feats = merge_feauters([feature_combinations[c] for c in comb])
 
         X, Y = features_labels_to_xy(merged_feats, Y_raw, annotation.keys())
-        # 3. Normalise everything in format
-
+        X = np.array(X)
+        print("X Len: ", len(X))
         # 4. Create pipeline
 
         pipeline = Pipeline([
@@ -80,31 +138,34 @@ if __name__ == '__main__':
             ('clf', SGDClassifier()),
         ])
         parameters = [
-            {
-                'clf': (LogisticRegression(class_weight='balanced'),),
-                'clf__C': (1, 2, 10),
-                'clf__random_state': (42,)
-            },
+
             # {
             #     'clf': (SVC(probability=True),),
-            #     'clf__C': (0.01, 0.5, 1.0, 2, 10),
-            #     'clf__kernel': ('rbf', 'linear'),
+            #     'clf__C': (0.01, 1.0, 2),
+            #     'clf__kernel': ('rbf', 'linear', 'poly'),
             #     'clf__gamma': (0.001, 0.01),
             #     'clf__random_state': (42,),
             # },
             # {
-            #     'clf': (RandomForestClassifier(max_features='sqrt'),),
-            #     'clf__n_estimators': (1, 5, 10, 100),
+            #     'clf': (RandomForestClassifier(),),
+            #     'clf__n_estimators': (3, 5, 10),
             #     'clf__random_state': (42,),
+            #     'clf__criterion': ("gini", "entropy"),
             #     'clf__class_weight': ('balanced', None),
             # },
+            {
+                'clf': (DecisionTreeClassifier(random_state=42),),
+                    'clf__max_depth': (5,),
+                'clf__min_samples_leaf': (5,)
+            },
             # {
-            #     'clf': (DecisionTreeClassifier(random_state=42, max_features='sqrt'),),
-            #     'clf__class_weight': ('balanced', None),
-            # }
+            #     'clf': (KNeighborsClassifier(),),
+            #     'clf__n_neighbors': (3, 5, 7, 9),
+            #     'clf__metric': ('euclidean', 'minkowski'),
+            # },
 
         ]
-        grid_search = GridSearchCV(pipeline, parameters, cv=5)
+        grid_search = GridSearchCV(pipeline, parameters, cv=10, n_jobs=-1)
 
         clf = grid_search.fit(X, Y)
 
@@ -115,6 +176,7 @@ if __name__ == '__main__':
 
         predicted = []
         gold = []
+        dt_repres = []
         for train_index, test_index in loo.split(X):
             X_train, X_test = X[train_index], X[test_index]
             y_train, y_test = Y[train_index], Y[test_index]
@@ -126,17 +188,31 @@ if __name__ == '__main__':
             predicted.append(pred)
             gold.append(y_test)
 
+            dt_repres.append(decision_tree_representation(new_fit['clf']))
+
         clas_rep = classification_report(gold, predicted)
 
-        # print(clas_rep)
+        dt_stats = decision_tree_stats(dt_repres)
+        print(clas_rep)
         print(clf.best_params_)
         # print(clf.best_score_)
-        performance = accuracy_score(gold, predicted)
+        performance = roc_auc_score(gold, predicted)
         print(performance)
 
         # print(X.shape)
         mode = stats.mode(Y)
         occs = np.count_nonzero(Y == mode)
-        # print('Baseline: {}'.format(occs/len(Y)))
-        logging('clasification.tsv', comb, clf.best_params_, performance)
+        baseline = roc_auc_score(gold, [mode[0]]*len(Y))
+        print('Baseline: {}'.format(baseline))
+        print(comb)
+        res = []
+
+        for p, g in zip(predicted, gold):
+            if p == g:
+                res.append(1)
+            else:
+                res.append(0)
+
+        print(res)
+        # logging('clasification_roc_AUC_trees_11_ft20_fixed_params_final_experiments3.tsv', comb, clf.best_params_, performance, dt_stats)
 

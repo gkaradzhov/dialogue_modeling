@@ -5,27 +5,28 @@ import spacy
 from external_tools.cornellversation.constructive.msg_features import message_features
 from external_tools.cornellversation.constructive.turn_features import turn_features, turns_from_chat
 
-from read_data import read_3_lvl_annotation_file
+from read_data import read_wason_dump
 
 def featurise(path_message, path_turns):
-    anns = read_3_lvl_annotation_file('../3lvl_anns.tsv')
+    raw = read_wason_dump('../data/all_data_20210107/')
+
     nlp = spacy.load("en_core_web_sm")
-    for a in anns:
-        a.preprocess_everything(nlp)
+    for item in raw:
+        item.wason_messages_from_raw()
+        item.preprocess_everything(nlp)
 
     sc_format = []
-    for conv in anns:
+    for conv in raw:
         sc_format.append(conv.to_street_crowd_format())
 
     message_fs = []
     turn_feats = []
-    for ann, conversation in zip(anns, sc_format):
+    for ann, conversation in zip(raw, sc_format):
         mf_all = message_features(conversation)
 
         mf = mf_all[0]
         mf_av = average_dict(mf, mf[0].keys())
         message_fs.append([ann.identifier, *mf_av])
-        # tf = turn_features(conversation)
 
         all_t = turn_features(turns_from_chat(conversation))
         tf_av = average_dict(all_t, ('agree', 'disagree', 'n_repeated_content',
@@ -44,12 +45,14 @@ def featurise(path_message, path_turns):
 
 def average_dict(collection, keys):
     averaged = dict.fromkeys(keys, 0.0)
-    for item in collection:
-        for k in averaged.keys():
-            averaged[k] += item.get(k, 0.0)
 
-    for k, v in averaged.items():
-        averaged[k] = v / len(collection)
+    if len(collection) >= 1:
+        for item in collection:
+            for k in averaged.keys():
+                averaged[k] += item.get(k, 0.0)
+
+        for k, v in averaged.items():
+            averaged[k] = v / len(collection)
 
     return averaged.values()
 

@@ -1,0 +1,3 @@
+2021-01-19 17:34:47.501086	d,i,a,l,o,g,u,e,-,a,n,n,s	Namespace(cnn_size='32', dense_1='128', dense_2='64', optimiser='rmsprop', recurrent_size='64', type='cnn')	0.72
+2021-01-19 17:59:20.518762	dialogue-anns	Namespace(cnn_size='32', dense_1='128', dense_2='64', optimiser='sgd', recurrent_size='64', type='lstm')	0.58
+2021-01-20 12:28:41.050385	dialogue-anns	Namespace(cnn_size='32', dense_1='128', dense_2='64', optimiser='sgd', recurrent_size='64', type='lstm')	1.0

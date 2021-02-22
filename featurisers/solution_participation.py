@@ -4,9 +4,10 @@ from copy import copy
 import spacy
 import string
 from read_data import read_solution_annotaions, read_wason_dump, read_3_lvl_annotation_file
+from supporting_classifiers.agreement_classifier import Predictor
 from wason_message import WasonConversation, WasonMessage
 import pandas as pd
-from solution_tracker.simple_sol import process_raw_to_solution_tracker
+from solution_tracker.simple_sol import process_raw_to_solution_tracker, solution_tracker
 from collections import defaultdict
 
 
@@ -67,6 +68,7 @@ def featurise_solution_participation(solutions, conversations, path):
             latest_sol[local_sol['user']] = norm_value
 
         features[k_sol] = [solution_changes / messages,
+                           # solution_changes / len(participation_tracker),
                            *create_participation_feats(participation_at_20),
                            *create_participation_feats(participation_at_30),
                            *create_participation_feats(participation_normalised),
@@ -106,7 +108,9 @@ if __name__ == '__main__':
     # for a in anns:
     #     a.preprocess_everything(nlp)
 
-    raw_data = read_wason_dump('../data/all/')
+    agreement_predictor = Predictor('../models/agreement.pkl')
+
+    raw_data = read_wason_dump('../data/all_data_20210107/')
 
     hierch_data = read_3_lvl_annotation_file('../3lvl_anns.tsv')
 
@@ -116,9 +120,13 @@ if __name__ == '__main__':
         conv.raw_db_conversation = raw.raw_db_conversation
         conversations_to_process.append(conv)
 
+    for item in conversations_to_process:
+        item.wason_messages_from_raw()
+        item.preprocess_everything(nlp)
+
     sols = defaultdict(lambda x: [])
     for conv in conversations_to_process:
-        _, sol_tracker = process_raw_to_solution_tracker(conv, True)
+        sol_tracker = solution_tracker(conv, True, None)
         sols[conv.identifier] = sol_tracker
 
     featurise_solution_participation(sols, conversations_to_process, '../features/solution_participation.tsv')

@@ -1,0 +1,874 @@
+2021-01-21 11:50:34.079009	0.5	meta_feats	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:51:07.828173	0.5	meta_feats	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:51:16.124921	0.4523809523809524	annotation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:51:35.818467	0.5376984126984128	sc_turns	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:51:50.652363	0.4801587301587301	sc_messages	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:51:55.306575	0.4861111111111111	solution_participation	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:52:00.801218	0.4583333333333333	annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 11:52:04.939103	0.5019841269841271	annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:52:08.530288	0.5297619047619048	annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 11:52:13.518025	0.503968253968254	nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 11:52:19.024434	0.4305555555555556	meta_feats,annotation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:52:25.730497	0.5158730158730159	meta_feats,sc_turns	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:52:39.226961	0.4583333333333333	meta_feats,sc_messages	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:52:42.818113	0.4861111111111111	meta_feats,solution_participation	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:52:48.779371	0.5575396825396826	meta_feats,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 11:52:53.055180	0.4662698412698413	meta_feats,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:52:58.435222	0.5952380952380953	meta_feats,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 11:53:06.619485	0.4861111111111111	meta_feats,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:53:35.462204	0.5079365079365079	annotation,sc_turns	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:53:41.601429	0.5	annotation,sc_messages	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 11:54:01.103241	0.4444444444444444	annotation,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:54:21.210560	0.4861111111111111	annotation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:54:26.875421	0.46031746031746035	annotation,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 11:54:31.598837	0.5932539682539683	annotation,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 11:54:39.738744	0.4583333333333333	annotation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:55:24.712279	0.494047619047619	sc_turns,sc_messages	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:56:02.185192	0.4861111111111111	sc_turns,solution_participation	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 11:56:17.025934	0.5	sc_turns,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 11:56:21.617593	0.5654761904761905	sc_turns,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 11:56:49.812689	0.5	sc_turns,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:57:07.281350	0.5	sc_turns,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:57:13.305890	0.5019841269841271	sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:57:19.309212	0.48809523809523814	sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:57:24.806466	0.4662698412698413	sc_messages,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 11:57:32.702022	0.4523809523809524	sc_messages,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:57:51.316574	0.4583333333333333	sc_messages,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:58:00.115112	0.4662698412698413	solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:58:05.686788	0.5	solution_participation,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=7), 'clf__metric': 'euclidean', 'clf__n_neighbors': 7}
+2021-01-21 11:58:11.941396	0.4801587301587301	solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:58:27.179297	0.5	solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:58:41.524898	0.4722222222222222	annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:58:45.899524	0.47420634920634924	annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 11:58:59.469911	0.5	annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:59:04.693213	0.5992063492063492	annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 11:59:11.283231	0.494047619047619	annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 11:59:16.278989	0.4801587301587301	annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 11:59:21.123648	0.6091269841269842	meta_feats,annotation,sc_turns	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 11:59:25.339347	0.3611111111111111	meta_feats,annotation,sc_messages	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 11:59:39.196442	0.4861111111111111	meta_feats,annotation,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 11:59:55.275505	0.4861111111111111	meta_feats,annotation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:00:02.650153	0.4662698412698413	meta_feats,annotation,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:00:06.919779	0.628968253968254	meta_feats,annotation,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:00:11.614838	0.5019841269841271	meta_feats,annotation,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:00:32.091755	0.4722222222222222	meta_feats,sc_turns,sc_messages	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:00:37.072268	0.5	meta_feats,sc_turns,solution_participation	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:00:45.286647	0.49603174603174605	meta_feats,sc_turns,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:00:59.045971	0.4444444444444444	meta_feats,sc_turns,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:01:19.079963	0.4722222222222222	meta_feats,sc_turns,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:01:27.867362	0.4722222222222222	meta_feats,sc_turns,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:01:46.540623	0.4722222222222222	meta_feats,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:01:52.467000	0.49007936507936506	meta_feats,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=1,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:02:10.014624	0.4861111111111111	meta_feats,sc_messages,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:02:14.498596	0.5793650793650793	meta_feats,sc_messages,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:02:23.095251	0.5158730158730159	meta_feats,sc_messages,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:02:30.974485	0.4861111111111111	meta_feats,solution_participation,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:02:35.567555	0.5	meta_feats,solution_participation,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:02:58.502222	0.4861111111111111	meta_feats,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:03:16.300751	0.5	meta_feats,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:03:32.957385	0.4861111111111111	meta_feats,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:03:39.323318	0.48809523809523814	meta_feats,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:04:04.576344	0.5	meta_feats,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:04:21.074682	0.4861111111111111	meta_feats,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:04:26.343731	0.4722222222222222	meta_feats,annotation_sg_target,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean'), 'clf__metric': 'euclidean', 'clf__n_neighbors': 5}
+2021-01-21 12:04:32.938857	0.4861111111111111	meta_feats,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:04:38.703406	0.4722222222222222	annotation,sc_turns,sc_messages	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:04:57.003455	0.4861111111111111	annotation,sc_turns,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:05:02.219028	0.5158730158730159	annotation,sc_turns,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:05:06.695103	0.4722222222222222	annotation,sc_turns,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:05:11.557248	0.628968253968254	annotation,sc_turns,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:05:28.988656	0.5	annotation,sc_turns,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:05:47.406995	0.5079365079365079	annotation,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:05:53.163347	0.5019841269841271	annotation,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:05:58.173216	0.4861111111111111	annotation,sc_messages,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:06:02.597429	0.6150793650793651	annotation,sc_messages,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:06:07.595092	0.4583333333333333	annotation,sc_messages,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean'), 'clf__metric': 'euclidean', 'clf__n_neighbors': 5}
+2021-01-21 12:06:29.384777	0.4861111111111111	annotation,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:06:47.306313	0.4583333333333333	annotation,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:07:05.719208	0.4861111111111111	annotation,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:07:22.279870	0.5	annotation,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:07:41.135951	0.4861111111111111	annotation,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:08:00.133557	0.4861111111111111	annotation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:08:18.504568	0.5	annotation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:08:23.847221	0.5297619047619048	annotation,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:08:30.634073	0.6150793650793651	annotation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:08:49.874214	0.5	annotation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:08:55.594676	0.5238095238095238	sc_turns,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:09:01.450547	0.47420634920634924	sc_turns,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:09:20.676482	0.4722222222222222	sc_turns,sc_messages,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:09:38.709211	0.4861111111111111	sc_turns,sc_messages,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:09:46.122599	0.5357142857142857	sc_turns,sc_messages,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:10:05.040526	0.4861111111111111	sc_turns,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:10:09.059051	0.5	sc_turns,solution_participation,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=7), 'clf__metric': 'euclidean', 'clf__n_neighbors': 7}
+2021-01-21 12:10:14.996241	0.4801587301587301	sc_turns,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:10:22.273156	0.5297619047619048	sc_turns,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:10:39.928398	0.5	sc_turns,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:10:45.744119	0.4861111111111111	sc_turns,annotation_tf_everything,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:10:51.284018	0.5158730158730159	sc_turns,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:11:06.451447	0.4861111111111111	sc_turns,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:11:10.772326	0.5297619047619048	sc_turns,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:11:16.908655	0.5158730158730159	sc_turns,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:11:32.772452	0.4722222222222222	sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:11:56.035079	0.4861111111111111	sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:12:13.366383	0.4861111111111111	sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:12:18.492088	0.47420634920634924	sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:12:36.370310	0.4722222222222222	sc_messages,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:12:53.845641	0.5	sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:13:00.861656	0.4861111111111111	sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:13:05.837850	0.494047619047619	sc_messages,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:13:23.515352	0.5	sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:13:29.395796	0.47420634920634924	sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:13:35.870856	0.4166666666666667	solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:13:54.596300	0.5	solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:14:13.556151	0.5	solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:14:21.349579	0.4444444444444444	solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:14:29.979836	0.5158730158730159	solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:14:49.221611	0.5	solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:14:54.596806	0.4801587301587301	annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=7), 'clf__metric': 'euclidean', 'clf__n_neighbors': 7}
+2021-01-21 12:15:14.649202	0.5	annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:15:25.615940	0.494047619047619	annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:15:34.157222	0.4444444444444444	annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:15:54.768207	0.5218253968253967	meta_feats,annotation,sc_turns,sc_messages	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:16:19.858899	0.5218253968253967	meta_feats,annotation,sc_turns,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:16:25.714055	0.5099206349206349	meta_feats,annotation,sc_turns,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:16:33.636787	0.494047619047619	meta_feats,annotation,sc_turns,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:16:42.549467	0.628968253968254	meta_feats,annotation,sc_turns,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:16:48.619233	0.5515873015873016	meta_feats,annotation,sc_turns,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:17:05.504444	0.4861111111111111	meta_feats,annotation,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:17:23.004002	0.5	meta_feats,annotation,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:17:28.490854	0.503968253968254	meta_feats,annotation,sc_messages,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:17:37.091797	0.4523809523809524	meta_feats,annotation,sc_messages,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:17:50.780815	0.5079365079365079	meta_feats,annotation,sc_messages,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:18:24.347867	0.5	meta_feats,annotation,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:18:31.776715	0.4027777777777778	meta_feats,annotation,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:18:51.083404	0.4583333333333333	meta_feats,annotation,solution_participation,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:19:05.982388	0.5	meta_feats,annotation,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:19:14.038904	0.5595238095238095	meta_feats,annotation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:19:37.183973	0.5	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:19:42.468547	0.494047619047619	meta_feats,annotation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:19:46.514414	0.5793650793650793	meta_feats,annotation,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:20:18.611150	0.5	meta_feats,annotation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:20:30.690967	0.4583333333333333	meta_feats,annotation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:21:10.994327	0.494047619047619	meta_feats,sc_turns,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:21:41.145733	0.4583333333333333	meta_feats,sc_turns,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:21:47.268995	0.4722222222222222	meta_feats,sc_turns,sc_messages,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:21:53.058169	0.5456349206349207	meta_feats,sc_turns,sc_messages,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:21:59.400491	0.5079365079365079	meta_feats,sc_turns,sc_messages,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:22:22.447385	0.5	meta_feats,sc_turns,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:22:30.409274	0.5	meta_feats,sc_turns,solution_participation,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=7), 'clf__metric': 'euclidean', 'clf__n_neighbors': 7}
+2021-01-21 12:22:39.839316	0.5595238095238095	meta_feats,sc_turns,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:23:03.157723	0.4861111111111111	meta_feats,sc_turns,solution_participation,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:23:07.426649	0.4662698412698413	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:23:21.121938	0.4861111111111111	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:23:26.917458	0.5	meta_feats,sc_turns,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:23:30.738180	0.4107142857142857	meta_feats,sc_turns,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:23:36.325142	0.5	meta_feats,sc_turns,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:23:54.450964	0.5	meta_feats,sc_turns,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:24:00.035742	0.5019841269841271	meta_feats,sc_messages,solution_participation,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:24:27.317275	0.4861111111111111	meta_feats,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:24:44.866982	0.5	meta_feats,sc_messages,solution_participation,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:24:49.635750	0.7023809523809524	meta_feats,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:24:55.534425	0.42460317460317454	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:25:00.634411	0.5218253968253967	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:25:10.482137	0.4861111111111111	meta_feats,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:25:16.204137	0.5297619047619048	meta_feats,sc_messages,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:25:20.966785	0.5595238095238095	meta_feats,sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:25:28.786985	0.4444444444444444	meta_feats,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:25:49.961815	0.5	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:25:54.751036	0.42460317460317454	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:26:11.873812	0.5	meta_feats,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:26:16.756769	0.5218253968253967	meta_feats,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:26:31.990466	0.5	meta_feats,solution_participation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:26:36.956031	0.5952380952380953	meta_feats,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:26:56.452569	0.5	meta_feats,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:27:07.442153	0.5595238095238095	meta_feats,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:27:16.570817	0.4583333333333333	meta_feats,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:27:23.397629	0.4583333333333333	meta_feats,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:27:30.404795	0.4662698412698413	annotation,sc_turns,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:27:47.339949	0.4861111111111111	annotation,sc_turns,sc_messages,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:28:00.984204	0.5575396825396826	annotation,sc_turns,sc_messages,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:28:05.023947	0.623015873015873	annotation,sc_turns,sc_messages,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:28:10.229899	0.494047619047619	annotation,sc_turns,sc_messages,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean'), 'clf__metric': 'euclidean', 'clf__n_neighbors': 5}
+2021-01-21 12:28:16.403361	0.4662698412698413	annotation,sc_turns,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:28:20.783334	0.5	annotation,sc_turns,solution_participation,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:28:25.241857	0.46031746031746035	annotation,sc_turns,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:28:30.806458	0.5	annotation,sc_turns,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:28:46.153990	0.4861111111111111	annotation,sc_turns,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:28:51.634473	0.5595238095238095	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:29:08.698288	0.5	annotation,sc_turns,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:29:12.444281	0.6011904761904762	annotation,sc_turns,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:29:18.550942	0.4722222222222222	annotation,sc_turns,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:29:34.566100	0.5	annotation,sc_turns,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:29:40.766367	0.4305555555555556	annotation,sc_messages,solution_participation,annotation_tf_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:29:46.862538	0.44642857142857145	annotation,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:30:05.287783	0.4722222222222222	annotation,sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:30:25.432097	0.5	annotation,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:30:30.185218	0.4523809523809524	annotation,sc_messages,annotation_tf_everything,annotation_sg_target	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:30:36.683442	0.4722222222222222	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:30:53.189427	0.5	annotation,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:30:58.710862	0.5158730158730159	annotation,sc_messages,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:31:06.545726	0.6150793650793651	annotation,sc_messages,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:31:29.938706	0.5	annotation,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:31:37.019843	0.4444444444444444	annotation,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:31:42.338919	0.5734126984126984	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:31:47.828091	0.5972222222222222	annotation,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:32:08.308122	0.494047619047619	annotation,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:32:26.459693	0.5	annotation,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:32:44.660210	0.5	annotation,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:32:58.291260	0.4861111111111111	annotation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:33:02.476498	0.494047619047619	annotation,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:33:06.173565	0.5257936507936508	annotation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=1,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:33:22.691093	0.5	annotation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:33:27.400095	0.4662698412698413	sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:33:39.931591	0.4722222222222222	sc_turns,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:33:44.472425	0.4444444444444444	sc_turns,sc_messages,solution_participation,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:33:48.832579	0.4662698412698413	sc_turns,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:34:05.976956	0.5	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:34:19.167043	0.4861111111111111	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:34:24.215516	0.4166666666666667	sc_turns,sc_messages,annotation_tf_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:34:27.782980	0.5575396825396826	sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean'), 'clf__metric': 'euclidean', 'clf__n_neighbors': 5}
+2021-01-21 12:34:31.343448	0.5456349206349207	sc_turns,sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:34:45.903031	0.5	sc_turns,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:35:00.344750	0.4861111111111111	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:35:13.502112	0.4861111111111111	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:35:19.189154	0.5079365079365079	sc_turns,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:35:32.970834	0.5079365079365079	sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:35:38.786480	0.5714285714285714	sc_turns,solution_participation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:35:43.263100	0.5654761904761905	sc_turns,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:35:56.347044	0.5	sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:35:59.906849	0.5257936507936508	sc_turns,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:36:04.487717	0.4444444444444444	sc_turns,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:36:17.472972	0.5	sc_turns,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:36:30.444041	0.4583333333333333	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:36:43.213894	0.4861111111111111	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:36:48.948387	0.4861111111111111	sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:37:01.899382	0.5	sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:37:05.929411	0.4662698412698413	sc_messages,solution_participation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:37:11.194832	0.5436507936507936	sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:37:15.185763	0.5079365079365079	sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:37:28.508680	0.5	sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:37:41.434265	0.5	sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:37:54.310218	0.5	sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:37:59.677016	0.4722222222222222	solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:38:15.224276	0.5	solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:38:19.821038	0.494047619047619	solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:38:25.395845	0.5	solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:38:29.575560	0.494047619047619	annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:38:34.170374	0.42460317460317454	meta_feats,annotation,sc_turns,sc_messages,solution_participation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:38:49.460623	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:38:54.218628	0.5019841269841271	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:39:07.448568	0.4722222222222222	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:39:12.934417	0.5218253968253967	meta_feats,annotation,sc_turns,sc_messages,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:39:19.201824	0.4861111111111111	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:39:25.005252	0.4523809523809524	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:39:37.953475	0.4722222222222222	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:39:41.769546	0.5972222222222222	meta_feats,annotation,sc_turns,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:39:45.934148	0.4801587301587301	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:39:59.815620	0.4861111111111111	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:40:04.399827	0.5436507936507936	meta_feats,annotation,sc_turns,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:40:08.802046	0.6011904761904762	meta_feats,annotation,sc_turns,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:40:14.559000	0.5575396825396826	meta_feats,annotation,sc_turns,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:40:20.918190	0.5079365079365079	meta_feats,annotation,sc_turns,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:40:34.196092	0.4861111111111111	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:40:47.061827	0.4861111111111111	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:41:00.010716	0.4861111111111111	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:41:12.768542	0.5	meta_feats,annotation,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:41:26.190846	0.4722222222222222	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:41:40.572635	0.4861111111111111	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:41:54.121631	0.5	meta_feats,annotation,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:41:59.872807	0.5079365079365079	meta_feats,annotation,sc_messages,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:42:05.540682	0.5297619047619048	meta_feats,annotation,sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:42:21.072734	0.5	meta_feats,annotation,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:42:24.821967	0.4186507936507937	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:42:28.636390	0.49007936507936506	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:42:42.423812	0.5	meta_feats,annotation,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:42:55.227118	0.4583333333333333	meta_feats,annotation,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:42:59.733147	0.4305555555555556	meta_feats,annotation,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:43:12.862259	0.5	meta_feats,annotation,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:43:17.227758	0.5079365079365079	meta_feats,annotation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:43:30.402412	0.5	meta_feats,annotation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:43:34.871678	0.4801587301587301	meta_feats,annotation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:43:40.567673	0.4722222222222222	meta_feats,annotation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:43:53.369803	0.4861111111111111	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:44:06.153715	0.4583333333333333	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:44:18.906750	0.4861111111111111	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:44:33.117236	0.5	meta_feats,sc_turns,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:44:46.288451	0.5	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:44:49.871833	0.5674603174603174	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=1,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:44:53.936392	0.47420634920634924	meta_feats,sc_turns,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:45:08.618840	0.4722222222222222	meta_feats,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:45:14.050675	0.5218253968253967	meta_feats,sc_turns,sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:45:27.576362	0.5	meta_feats,sc_turns,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:45:40.340953	0.4722222222222222	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:45:45.949629	0.494047619047619	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:45:59.400547	0.5	meta_feats,sc_turns,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:46:11.777714	0.4722222222222222	meta_feats,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:46:17.262347	0.5079365079365079	meta_feats,sc_turns,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:46:20.939484	0.46230158730158727	meta_feats,sc_turns,solution_participation,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:46:33.848206	0.5	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:46:46.671459	0.5	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:46:59.695317	0.5	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:47:12.425961	0.5	meta_feats,sc_turns,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:47:27.297205	0.5	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:47:40.229868	0.5	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:47:47.820465	0.4861111111111111	meta_feats,sc_messages,solution_participation,annotation_tf_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:47:54.217294	0.4722222222222222	meta_feats,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:47:59.718577	0.4861111111111111	meta_feats,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:48:12.812081	0.5	meta_feats,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:48:25.791853	0.4861111111111111	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:48:29.713782	0.494047619047619	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:48:42.782762	0.5	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:48:55.451260	0.5	meta_feats,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:48:59.003276	0.49801587301587297	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:49:02.629266	0.6091269841269842	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:49:08.370576	0.4583333333333333	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:49:21.136967	0.5	meta_feats,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:49:26.669433	0.5575396825396826	meta_feats,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:49:30.776924	0.46031746031746035	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt', n_estimators=5,
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:49:43.825908	0.4861111111111111	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:49:47.884603	0.46031746031746035	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:49:53.447723	0.4861111111111111	annotation,sc_turns,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:49:56.989208	0.46230158730158727	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:50:09.982965	0.5	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:50:14.003966	0.375	annotation,sc_turns,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:50:18.814351	0.5297619047619048	annotation,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:50:32.010193	0.5	annotation,sc_turns,sc_messages,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:50:36.467122	0.5376984126984128	annotation,sc_turns,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:50:42.043031	0.4861111111111111	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:50:54.712458	0.4722222222222222	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:51:00.153676	0.4444444444444444	annotation,sc_turns,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:51:03.683653	0.5753968253968254	annotation,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:51:08.349092	0.5079365079365079	annotation,sc_turns,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:51:21.131224	0.5	annotation,sc_turns,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:51:26.497699	0.5297619047619048	annotation,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:51:30.054864	0.39880952380952384	annotation,sc_turns,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:51:35.636023	0.4583333333333333	annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:51:41.031101	0.5	annotation,sc_turns,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:51:54.097052	0.4861111111111111	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:52:06.903970	0.4722222222222222	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:52:10.786916	0.6111111111111112	annotation,sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:52:14.934080	0.4107142857142857	annotation,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:52:29.957259	0.5	annotation,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:52:33.965401	0.5376984126984128	annotation,sc_messages,solution_participation,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:52:37.639722	0.494047619047619	annotation,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=9), 'clf__metric': 'euclidean', 'clf__n_neighbors': 9}
+2021-01-21 12:52:50.774843	0.5	annotation,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:52:55.331025	0.4384920634920635	annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:53:02.290817	0.4027777777777778	annotation,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:53:08.924087	0.5158730158730159	annotation,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:53:24.328716	0.5	annotation,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:53:28.414921	0.7103174603174602	annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:53:41.137460	0.5	annotation,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:53:45.991632	0.5079365079365079	annotation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:53:52.280354	0.5297619047619048	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:54:06.212304	0.4722222222222222	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:54:19.470076	0.5	sc_turns,sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:54:33.199549	0.4861111111111111	sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:54:36.814541	0.5456349206349207	sc_turns,sc_messages,solution_participation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 12:54:40.455888	0.40476190476190477	sc_turns,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:54:53.693906	0.5	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:54:57.951562	0.4523809523809524	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 12:55:10.924512	0.5	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:55:24.253524	0.5	sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:55:37.541473	0.5	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:55:50.513646	0.5	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:56:03.691157	0.5	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:56:07.455302	0.5674603174603174	sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 12:56:12.952513	0.5436507936507936	sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:56:18.507472	0.4801587301587301	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:56:24.225771	0.4722222222222222	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:56:37.829596	0.5	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:56:43.771978	0.5714285714285714	sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:56:48.207853	0.4305555555555556	sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 12:57:02.310502	0.5	solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:57:07.743146	0.5376984126984128	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:57:20.305737	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:57:33.657070	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:57:38.749131	0.4305555555555556	meta_feats,annotation,sc_turns,sc_messages,solution_participation,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:57:44.783057	0.4662698412698413	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:58:00.723659	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:58:06.465248	0.5714285714285714	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:58:09.873722	0.5793650793650793	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything	{'clf': KNeighborsClassifier(metric='euclidean', n_neighbors=3), 'clf__metric': 'euclidean', 'clf__n_neighbors': 3}
+2021-01-21 12:58:13.326837	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_target,nn_representation	{'clf': KNeighborsClassifier(metric='euclidean'), 'clf__metric': 'euclidean', 'clf__n_neighbors': 5}
+2021-01-21 12:58:26.691290	0.5	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:58:32.169909	0.494047619047619	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 12:58:45.062378	0.5	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:58:50.754936	0.4583333333333333	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:58:55.243907	0.4662698412698413	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 12:59:08.045712	0.4861111111111111	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 12:59:21.032891	0.5	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:59:25.474410	0.48809523809523814	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 12:59:31.626936	0.4583333333333333	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:59:44.839312	0.5	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 12:59:50.155835	0.4861111111111111	meta_feats,annotation,sc_turns,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 12:59:55.740933	0.4305555555555556	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:00:10.515217	0.5	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:00:14.418559	0.6607142857142857	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:00:27.530457	0.5	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:00:40.420358	0.5	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:00:53.324370	0.5	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:01:06.078818	0.4861111111111111	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:01:11.520922	0.4861111111111111	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:01:24.612915	0.5	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:01:30.426260	0.4861111111111111	meta_feats,annotation,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:01:43.182023	0.5	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:01:56.286964	0.5	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:01:59.980930	0.5396825396825397	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:02:13.092799	0.5	meta_feats,annotation,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:02:18.477091	0.4722222222222222	meta_feats,annotation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:02:22.471331	0.4662698412698413	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 13:02:38.437262	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:02:51.456404	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:02:55.377420	0.4662698412698413	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:03:08.232631	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:03:20.945364	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:03:34.206070	0.4861111111111111	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:03:39.548961	0.4166666666666667	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:03:45.124669	0.4861111111111111	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:03:49.497328	0.5376984126984128	meta_feats,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 13:04:03.200082	0.5	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:04:08.509711	0.5079365079365079	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:04:21.537537	0.4861111111111111	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:04:27.234980	0.4662698412698413	meta_feats,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:04:40.582130	0.5	meta_feats,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:04:53.824982	0.5	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:04:57.418176	0.7103174603174602	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:05:01.506455	0.5595238095238095	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 13:05:14.245568	0.5	meta_feats,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:05:28.131990	0.5	meta_feats,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:05:33.947770	0.4583333333333333	meta_feats,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:05:46.559025	0.4722222222222222	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:05:59.529663	0.5	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:06:04.880877	0.5	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:06:17.344445	0.4861111111111111	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:06:21.910397	0.375	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 13:06:26.010286	0.5376984126984128	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:06:39.799417	0.4861111111111111	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:06:52.970894	0.5	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:06:57.497389	0.4662698412698413	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 13:07:01.469910	0.6369047619047619	annotation,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:07:05.151197	0.5476190476190477	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 13:07:10.596120	0.4861111111111111	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:07:15.199927	0.494047619047619	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 13:07:29.347383	0.5	annotation,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:07:44.928140	0.5	annotation,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:07:58.266697	0.4861111111111111	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:08:03.560844	0.4444444444444444	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:08:16.304197	0.5	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:08:29.606514	0.5	annotation,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:08:43.971459	0.5	annotation,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:08:49.434135	0.5793650793650793	annotation,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(criterion='entropy', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:08:54.050337	0.4384920634920635	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 13:09:06.959824	0.5	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:09:13.158853	0.5714285714285714	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:09:16.733687	0.48809523809523814	sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:09:29.844445	0.5	sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:09:45.639092	0.5	sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:09:58.619161	0.5	sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:10:11.661022	0.4861111111111111	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:10:17.182830	0.4722222222222222	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:10:22.698076	0.5218253968253967	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:10:26.216507	0.5456349206349207	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 13:10:31.535222	0.5575396825396826	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:10:36.645127	0.5793650793650793	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:10:42.193896	0.494047619047619	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:10:46.317932	0.5178571428571428	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 13:10:59.137976	0.5	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:11:11.984737	0.5	meta_feats,annotation,sc_turns,sc_messages,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:11:25.957111	0.4861111111111111	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:11:30.233631	0.5813492063492063	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:11:34.823814	0.494047619047619	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}
+2021-01-21 13:11:47.635436	0.5	meta_feats,annotation,sc_turns,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:11:51.798154	0.5019841269841271	meta_feats,annotation,sc_turns,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:11:55.808891	0.48809523809523814	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:11:59.427469	0.5396825396825397	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=1, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}"
+2021-01-21 13:12:12.633753	0.5	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:12:18.019708	0.5218253968253967	meta_feats,annotation,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:12:31.111821	0.5	meta_feats,annotation,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:12:47.650919	0.5	meta_feats,annotation,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:12:57.189320	0.4166666666666667	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:13:12.652601	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:13:18.246166	0.5	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:13:21.802044	0.6031746031746033	meta_feats,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 13:13:34.899513	0.5	meta_feats,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:13:47.853583	0.5	meta_feats,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:14:02.026280	0.5	meta_feats,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:14:06.452203	0.4384920634920635	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 10, 'clf__random_state': 42}
+2021-01-21 13:14:19.199034	0.5	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:14:24.824160	0.4861111111111111	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:14:30.900449	0.4722222222222222	annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:14:44.259038	0.5	annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:14:57.502083	0.4861111111111111	annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:15:10.596831	0.5	annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:15:16.098631	0.5	sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:15:20.754255	0.48809523809523814	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=10, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 10, 'clf__random_state': 42}"
+2021-01-21 13:15:26.338411	0.5357142857142857	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=20, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}
+2021-01-21 13:15:30.345399	0.5158730158730159	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:15:43.756653	0.5	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}
+2021-01-21 13:15:56.595083	0.5	meta_feats,annotation,sc_turns,sc_messages,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:16:02.687186	0.4583333333333333	meta_feats,annotation,sc_turns,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=20, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 20, 'clf__random_state': 42}"
+2021-01-21 13:16:06.493539	0.6309523809523809	meta_feats,annotation,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	{'clf': RandomForestClassifier(max_features='sqrt', n_estimators=1, random_state=42), 'clf__class_weight': None, 'clf__criterion': 'gini', 'clf__n_estimators': 1, 'clf__random_state': 42}
+2021-01-21 13:16:10.729311	0.5456349206349207	meta_feats,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 5, 'clf__random_state': 42}"
+2021-01-21 13:16:23.635033	0.5	annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', max_features='sqrt',
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 100, 'clf__random_state': 42}"
+2021-01-21 13:16:27.756516	0.4444444444444444	meta_feats,annotation,sc_turns,sc_messages,solution_participation,annotation_tf_everything,annotation_sg_target,annotation_sg_everything,nn_representation	"{'clf': RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='sqrt', n_estimators=5, random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'entropy', 'clf__n_estimators': 5, 'clf__random_state': 42}"

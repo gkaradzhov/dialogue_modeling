@@ -18,6 +18,7 @@ allowed = {
 # all cards with vowels on one side have even numbers on the other
 # To prove the rule, one should turn the vowel and the odd number
 def is_solution_absolute(state):
+
     for item in state:
         if (item['value'] in allowed['vowels'] or item['value'] in allowed['odds']):
             if item['checked'] is False:
@@ -32,10 +33,16 @@ def is_solution_absolute(state):
 def is_solution_fine_grained(state):
     checked_dict = {'vowels': False, 'consonants': False, 'odds': False, 'evens': False}
 
-    for item in state:
-        for checked in checked_dict.keys():
-            if item['value'] in allowed[checked] and item['checked'] is True:
-                checked_dict[checked] = True
+    if isinstance(state, list):
+        for item in state:
+            for checked in checked_dict.keys():
+                if item['value'] in allowed[checked] and item['checked'] is True:
+                    checked_dict[checked] = True
+    else:
+        for item in state:
+            for checked in checked_dict.keys():
+                if item in allowed[checked]:
+                    checked_dict[checked] = True
 
     score = 0
     classification = 'OTHER_ERROR'
@@ -224,9 +231,10 @@ def featurise(collection, path):
             prepr = preprocess_conversation_dump(d.raw_db_conversation)
             s = calculate_stats(prepr)
 
-            if s['num_of_playing_wason'] >= 2:
-                s['identifier'] = d.identifier
-                stats.append(s)
+
+            s['identifier'] = d.identifier
+            stats.append(s)
+
         except Exception as e:
             print(e)
 
@@ -286,7 +294,7 @@ if __name__ == '__main__':
     # for a in anns:
     #     a.preprocess_everything(nlp)
 
-    raw_data = read_wason_dump('../data/all/')
+    raw_data = read_wason_dump('../data/all_data_20210107/')
 
     featurise(raw_data, '../features/wason_stats.tsv')
     # stats = []

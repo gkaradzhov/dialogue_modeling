@@ -4,6 +4,127 @@ from read_data import read_solution_annotaions, read_wason_dump, read_3_lvl_anno
 from wason_message import WasonConversation, WasonMessage
 import pandas as pd
 
+
+def solution_tracker(wason_conversation, include_annotations=True, agreement_classifier=None):
+    solution_tracker = []
+    initial_submissions = {}
+    initial_cards = set()
+
+    last_solution = set('0')
+    is_solution_proposed_last = False
+    last_partial = False
+    message_count = 0
+    total_length = len(wason_conversation.wason_messages)
+
+    for rm in wason_conversation.raw_db_conversation:
+        if rm['message_type'] == "WASON_INITIAL":
+            initial_cards.update([l['value'] for l in rm['content']])
+
+        if rm['message_type'] == 'WASON_SUBMIT':
+            initial_submissions[rm['user_name']] = set([l['value'] for l in rm['content'] if l['checked']])
+
+        if rm['message_type'] == 'FINISHED_ONBOARDING':
+            break
+
+    # Populate initial submissions
+    for user, item in initial_submissions.items():
+        solution_tracker.append({'type': "INITIAL",
+                                 'content': "INITIAL",
+                                 'user': user,
+                                 'value': item,
+                                 'id': -1
+                                 })
+
+    # Start tracking conversation
+
+    for item in wason_conversation.raw_db_conversation:
+        if item['user_status'] != 'USR_PLAYING':
+            continue
+
+        if item['message_type'] == 'WASON_SUBMIT':
+            solution_tracker.append({'type': "SUBMIT",
+                                     'content': "SUBMIT",
+                                     'user': item['user_name'],
+                                     'value': set([l['value'] for l in item['content'] if l['checked']]),
+                                     'id': item['message_id']
+                                     })
+
+        if item['message_type'] == 'CHAT_MESSAGE':
+            message_count += 1
+            wason_message = wason_conversation.get_wason_from_raw(item)
+
+            if not wason_message:
+                continue
+
+            if include_annotations:
+                if not wason_message.annotation:
+                    continue
+                if (wason_message.annotation['target'] in ['Reasoning', 'Disagree', 'Moderation']
+                        or wason_message.annotation['type'] == 'Probing') \
+                        and len({'partial_solution', 'complete_solution', 'solution_summary'}.intersection(
+                            wason_message.annotation['additional'])) == 0:
+                    is_solution_proposed_last = False
+
+                cards = {'0'}
+                if len({'partial_solution', 'complete_solution', 'solution_summary'}.intersection(
+                            wason_message.annotation['additional'])) >= 1:
+                    type, cards = extract_from_message(wason_message, initial_cards)
+
+                    if cards != {'0'}:
+                        if 'partial_solution' in wason_message.annotation['additional'] and last_solution != {'0'}:
+                            if last_partial:
+                                last_solution.update(cards)
+                                cards = last_solution
+                            else:
+                                last_partial = True
+                                last_solution = cards
+                        else:
+                            last_solution = cards
+                            last_partial = False
+                        is_solution_proposed_last = True
+
+                # if cards == {'0'} and wason_message.annotation['target'] == 'Agree' and is_solution_proposed_last:
+                #     cards = last_solution
+
+                if len({'partial_solution', 'complete_solution', 'solution_summary'}.intersection(
+                        wason_message.annotation['additional'])) >= 1:
+                        # or wason_message.annotation['target'] == 'Agree':
+
+                    if cards != {'0'}:
+                        solution_tracker.append({'type': "MENTION",
+                                                 'content': wason_message.content,
+                                                 'user': item['user_name'],
+                                                 'value': cards,
+                                                 'id': item['message_id'],
+                                                 'pos': message_count/total_length
+                                                 })
+            else:
+                type, cards = extract_from_message(wason_message, initial_cards)
+                if cards != {'0'}:
+                    solution_tracker.append({'type': "MENTION",
+                                             'content': wason_message.content,
+                                             'user': item['user_name'],
+                                             'value': cards,
+                                             'id': item['message_id'],
+                                             'pos': message_count / total_length
+                                             })
+
+                    last_solution = cards
+
+                else:
+                    continue
+                    agreement = agreement_classifier.predict(wason_message.content)
+                    if agreement == 1:
+                        solution_tracker.append({'type': "AGREEMENT",
+                                                 'content': wason_message.content,
+                                                 'user': item['user_name'],
+                                                 'value': last_solution,
+                                                 'id': item['message_id'],
+                                                 'pos': message_count / total_length
+                                                 })
+
+    return solution_tracker
+
 def process_raw_to_solution_tracker(wason_conversation: WasonConversation, prediction=False):
     solution_tracker = []
     initial_submissions = {}
