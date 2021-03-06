@@ -1,21 +1,15 @@
-import os
-import csv
-from datetime import datetime
-from copy import copy
-from scipy import stats
-
 from sklearn.neighbors import KNeighborsRegressor
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, BayesianRidge
-from sklearn.metrics import classification_report, r2_score, mean_squared_error
+from sklearn.metrics import mean_squared_error
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import MinMaxScaler, MaxAbsScaler
-from sklearn.svm import SVC, SVR
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.svm import SVR
 from sklearn.model_selection import GridSearchCV, LeaveOneOut
 from itertools import combinations
 
-from featurisers.raw_wason_featuriser import get_y, get_y_regresion
+from featurisers.raw_wason_featuriser import get_y_regresion
 from outcome_prediction.prediction_utils import get_features, logging, merge_feauters, features_labels_to_xy
 from read_data import read_wason_dump
 

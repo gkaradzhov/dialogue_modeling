@@ -1,12 +1,9 @@
-import os
-import csv
-from itertools import combinations
 from scipy import stats
 from sklearn.metrics import classification_report, accuracy_score
-from sklearn.model_selection import LeaveOneOut, train_test_split
+from sklearn.model_selection import LeaveOneOut
 
 from featurisers.raw_wason_featuriser import get_y
-from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy, logging, \
+from outcome_prediction.prediction_utils import features_labels_to_xy, logging, \
     read_folder_features
 from read_data import read_wason_dump
 from tensorflow.keras import layers

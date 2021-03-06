@@ -1,26 +1,19 @@
-import os
-import csv
 from itertools import combinations
 
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
 from scipy import stats
 
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import SGDClassifier
-from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
+from sklearn.metrics import classification_report, roc_auc_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV, LeaveOneOut
-from sklearn.linear_model import LogisticRegression
 
 from featurisers.raw_wason_featuriser import get_y
-from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy, logging, \
+from prediction_utils import get_features, merge_feauters, features_labels_to_xy, \
     decision_tree_representation, decision_tree_stats
 from read_data import read_wason_dump
-from sklearn.tree import export_text
 import numpy as np
 
 FEATURE_MAPS = {

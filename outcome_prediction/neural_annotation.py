@@ -1,6 +1,4 @@
-import os
 import csv
-from itertools import combinations
 from argparse import ArgumentParser
 
 from scipy import stats
@@ -9,13 +7,13 @@ from sklearn.model_selection import LeaveOneOut, train_test_split
 from tensorflow.python.keras.layers import Embedding
 
 from featurisers.raw_wason_featuriser import get_y
-from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy, logging, \
-    read_folder_features, get_raw_features, features_to_arrays
+from outcome_prediction.prediction_utils import logging, \
+    get_raw_features, features_to_arrays
 from read_data import read_wason_dump
 from tensorflow.keras import layers
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras.preprocessing.text import one_hot,Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 from keras.models import Model
 
 def create_tokeniser(raw):

@@ -4,7 +4,7 @@ from sklearn.model_selection import LeaveOneOut
 
 from featurisers.raw_wason_featuriser import get_y
 from outcome_prediction.linear_pipeline import FEATURE_MAPS
-from outcome_prediction.prediction_utils import get_features, merge_feauters, features_labels_to_xy
+from outcome_prediction.prediction_utils import get_features, merge_feauters
 from read_data import read_wason_dump
 import numpy as np
 
