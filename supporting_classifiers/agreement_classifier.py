@@ -8,7 +8,7 @@ import pickle
 
 
 class Predictor():
-    def __init__(self, path='../models/agreement.pkl'):
+    def __init__(self, path='models/agreement.pkl'):
         with open(path, 'rb') as file:
             self.model = pickle.load(file)
 
@@ -31,6 +31,6 @@ if __name__ == '__main__':
 
     pipeline.fit(train)
 
-    pkl_filename = "../models/agreement.pkl"
+    pkl_filename = "models/agreement.pkl"
     with open(pkl_filename, 'wb') as file:
         pickle.dump(pipeline, file)

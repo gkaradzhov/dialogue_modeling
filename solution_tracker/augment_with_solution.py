@@ -18,7 +18,7 @@ def calculate_team_performance(latest_solutions):
     return round(score / len(latest_solutions), 3)
 
 
-def merge_with_solution(conversation_external, supervised=True):
+def merge_with_solution_raw(conversation_external, supervised=True):
     conversation = copy.deepcopy(conversation_external)
     if not supervised:
         agreement_predictor = Predictor('models/agreement.pkl')
@@ -33,7 +33,7 @@ def merge_with_solution(conversation_external, supervised=True):
 
     for item in sol_tracker:
         if item['type'] == 'INITIAL':
-            latest_sol[item['user']] = " ".join(item['value'])
+            latest_sol[item['user']] = item['value']
         else:
             if item['user'] not in latest_sol:
                 latest_sol[item['user']] = 'N/A'
@@ -41,6 +41,16 @@ def merge_with_solution(conversation_external, supervised=True):
     team_performance = calculate_team_performance(latest_sol)
 
     latest_score = team_performance
+
+    team_performance = calculate_team_performance(latest_sol)
+    display_dict = copy.copy(latest_sol)
+    display_dict['team_performance'] = team_performance
+    display_dict['performance_change'] = team_performance - latest_score
+
+    wm = WasonMessage(identifier=-1, origin='SYSTEM', content='SYSTEM',
+                      annotation_obj=display_dict, type='INITIAL')
+    with_solutions.append(wm)
+
 
     for raw in conversation.raw_db_conversation:
         if raw['user_status'] != 'USR_PLAYING':
@@ -77,8 +87,45 @@ def merge_with_solution(conversation_external, supervised=True):
             with_solutions.append(annotation_wason_conv)
         else:
             wm = WasonMessage(identifier=raw['message_id'], origin=raw['user_name'], content='SYSTEM',
-                              annotation_obj=display_dict)
+                              annotation_obj=display_dict, type='SUBMIT')
             with_solutions.append(wm)
+
+    return with_solutions
+
+
+def merge_with_solution_annotation_message_level(conversation_external, supervised=True):
+    conversation = copy.deepcopy(conversation_external)
+    if not supervised:
+        agreement_predictor = Predictor('models/agreement.pkl')
+        sol_tracker = solution_tracker(conversation, supervised, agreement_predictor)
+    else:
+        sol_tracker = solution_tracker(conversation, supervised)
+
+    print(sol_tracker)
+    with_solutions = []
+
+
+    for raw in conversation.raw_db_conversation:
+        if raw['user_status'] != 'USR_PLAYING':
+            continue
+
+        if raw['message_type'] == 'CHAT_MESSAGE':
+            local_sol = [s for s in sol_tracker if s['id'] == raw['message_id']]
+            if len(local_sol) == 0:
+                continue
+            else:
+                local_sol = local_sol[0]
+        else:
+            continue
+        annotation_wason_conv = None
+
+        for index, item in enumerate(conversation.wason_messages):
+            if item.identifier == raw['message_id']:
+                annotation_wason_conv = item
+
+        if annotation_wason_conv is not None:
+            annotation_wason_conv.annotation['sol_tracker'] = local_sol['value']
+            with_solutions.append(annotation_wason_conv)
 
     return with_solutions
 

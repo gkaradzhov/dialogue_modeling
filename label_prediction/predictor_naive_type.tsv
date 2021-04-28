@@ -1,0 +1,21 @@
+2021-03-06 13:26:41.379780	0.6725689821052795	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 2)}"	
+2021-03-06 13:36:36.562705	0.6725689821052795	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__criterion': 'gini', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 2)}"	
+2021-03-07 10:44:03.485003	0.6725689821052795	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 2)}"	
+2021-03-07 10:50:34.800670	0.6725689821052795	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 2)}"	
+2021-03-07 10:54:50.098606	0.6725689821052795	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 2)}"	
+2021-03-08 12:11:05.885826	0.5133210701924753	n,/,a	{'clf': DecisionTreeClassifier(max_depth=5, min_samples_leaf=5, random_state=42), 'clf__max_depth': 5, 'clf__min_samples_leaf': 5}	
+2021-03-08 12:14:48.247892	0.5255156540385616	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 3), 'union__current_tf__tfidf_2__ngram_range': (1, 3)}"	
+2021-03-08 12:18:10.377020	0.5133210701924753	n,/,a	{'clf': DecisionTreeClassifier(max_depth=5, min_samples_leaf=5, random_state=42), 'clf__max_depth': 5, 'clf__min_samples_leaf': 5}	
+2021-03-08 12:35:33.135193	0.5133210701924753	n,/,a	{'clf': DecisionTreeClassifier(max_depth=5, min_samples_leaf=5, random_state=42), 'clf__max_depth': 5, 'clf__min_samples_leaf': 5}	
+2021-03-08 12:55:16.489611	0.5133210701924753	n,/,a	{'clf': DecisionTreeClassifier(max_depth=5, min_samples_leaf=5, random_state=42), 'clf__max_depth': 5, 'clf__min_samples_leaf': 5}	
+2021-03-08 12:57:15.258932	0.5133210701924753	n,/,a	{'clf': DecisionTreeClassifier(max_depth=5, min_samples_leaf=5, random_state=42), 'clf__max_depth': 5, 'clf__min_samples_leaf': 5}	
+2021-03-08 13:07:53.284647	0.6462726025670007	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 2), 'union__current_tf__tfidf_2__ngram_range': (1, 3)}"	
+2021-03-08 13:14:17.917526	0.704445818731533	n,/,a	"{'clf': RandomForestClassifier(class_weight='balanced', n_estimators=50,
+                       random_state=42), 'clf__class_weight': 'balanced', 'clf__n_estimators': 50, 'clf__random_state': 42, 'union__context_tf__tfidf_1__ngram_range': (1, 3), 'union__current_tf__tfidf_2__ngram_range': (1, 4)}"	

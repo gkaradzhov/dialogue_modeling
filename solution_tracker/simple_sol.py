@@ -52,7 +52,6 @@ def solution_tracker(wason_conversation, include_annotations=True, agreement_cla
         if item['message_type'] == 'CHAT_MESSAGE':
             message_count += 1
             wason_message = wason_conversation.get_wason_from_raw(item)
-
             if not wason_message:
                 continue
 

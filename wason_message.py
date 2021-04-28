@@ -1,5 +1,5 @@
 class WasonMessage:
-    def __init__(self, origin, content, annotation_obj, identifier):
+    def __init__(self, origin, content, annotation_obj, identifier, type='MESSAGE'):
         self.identifier = identifier
         self.origin = origin
         self.content = content
@@ -7,6 +7,7 @@ class WasonMessage:
         self.content_tokenised = []
         self.content_pos = []
         self.no_solution_text = ""
+        self.type = type
 
     def merge_annotations(self, external_annotation_object):
         new_ann_dict = {**self.annotation, **external_annotation_object}
@@ -41,12 +42,13 @@ class WasonConversation:
         return cards
 
     def wason_messages_from_raw(self):
+        self.wason_messages = []
         for m in self.raw_db_conversation:
             if m['message_type'] == 'CHAT_MESSAGE':
                 self.wason_messages.append(WasonMessage(origin=m['user_name'],
                                                         content=m['content'],
                                                         identifier=m['message_id'],
-                                                        annotation_obj=None))
+                                                        annotation_obj={}))
 
     def to_street_crowd_format(self):
         data = []
