@@ -46,6 +46,7 @@ def merge_with_solution_raw(conversation_external, supervised=True):
     display_dict = copy.copy(latest_sol)
     display_dict['team_performance'] = team_performance
     display_dict['performance_change'] = team_performance - latest_score
+    display_dict['change_type'] = 'INITIAL'
 
     wm = WasonMessage(identifier=-1, origin='SYSTEM', content='SYSTEM',
                       annotation_obj=display_dict, type='INITIAL')
@@ -57,15 +58,20 @@ def merge_with_solution_raw(conversation_external, supervised=True):
             continue
 
         if raw['message_type'] == 'WASON_SUBMIT':
+            change_type = 'SUBMIT'
             local_sol = [s for s in sol_tracker if s['id'] == raw['message_id']][0]
         elif raw['message_type'] == 'CHAT_MESSAGE':
             local_sol = [s for s in sol_tracker if s['id'] == raw['message_id']]
+            change_type = 'CHAT'
+
             if len(local_sol) == 0:
                 if raw['user_name'] not in latest_sol:
                     latest_sol[raw['user_name']] = 'UKN'
                 local_sol = {'user': raw['user_name'], 'value': latest_sol[raw['user_name']]}
             else:
                 local_sol = local_sol[0]
+                change_type = 'OTHER'
+
         else:
             continue
 
@@ -74,6 +80,7 @@ def merge_with_solution_raw(conversation_external, supervised=True):
         display_dict = copy.copy(latest_sol)
         display_dict['team_performance'] = team_performance
         display_dict['performance_change'] = team_performance - latest_score
+        display_dict['change_type'] = change_type
         latest_score = team_performance
 
         annotation_wason_conv = None

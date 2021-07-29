@@ -158,6 +158,7 @@ def calculate_stats(conversations_dump):
         'unique_tokens': Counter(),
         'onboarding_types': Counter(),
         'game_types': Counter(),
+        'number_of_submits': 0
     }
 
     onboarding_versions = []
@@ -189,6 +190,12 @@ def calculate_stats(conversations_dump):
         result_stats['unique_tokens'].update(
             [t.translate(table) for s in user['MESSAGES_TOKENIZED'] for t in s if len(t.strip()) >= 4])
 
+        last = None
+        for gs in user['GAME_SUBMIT']:
+            if gs[1] != last:
+                last = gs[1]
+                result_stats['number_of_submits'] += 1
+
     print(onboarding_versions)
     on_c = Counter(onboarding_versions).most_common(1)[0][1]
     fin_c = Counter(final_versions).most_common(1)[0][1]
@@ -212,6 +219,7 @@ def calculate_stats(conversations_dump):
     result_stats['most_common_tokens'] = result_stats['unique_tokens'].most_common(5)
     result_stats['task_performance'] = result_stats['final_success_rate'] - result_stats['onboarding_success_rate']
     result_stats['performance_gain_binary'] = 1 if result_stats['task_performance'] > 0 else 0
+    result_stats['submits_per_user'] = result_stats['number_of_submits'] / result_stats['num_of_playing_wason']
 
 
     deli_correct = 0
