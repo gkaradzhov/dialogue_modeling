@@ -110,23 +110,23 @@ if __name__ == '__main__':
 
     agreement_predictor = Predictor('../models/agreement.pkl')
 
-    raw_data = read_wason_dump('../data/all_data_20210107/')
+    raw_data = read_wason_dump('../data/final_all/')
 
-    hierch_data = read_3_lvl_annotation_file('../3lvl_anns.tsv')
+    # hierch_data = read_3_lvl_annotation_file('../3lvl_anns.tsv')
 
     conversations_to_process = []
-    for conv in hierch_data:
-        raw = [d for d in raw_data if d.identifier == conv.identifier][0]
-        conv.raw_db_conversation = raw.raw_db_conversation
-        conversations_to_process.append(conv)
+    # for conv in hierch_data:
+    #     raw = [d for d in raw_data if d.identifier == conv.identifier][0]
+    #     conv.raw_db_conversation = raw.raw_db_conversation
+    #     conversations_to_process.append(conv)
 
-    for item in conversations_to_process:
+    for item in raw_data:
         item.wason_messages_from_raw()
         item.preprocess_everything(nlp)
 
     sols = defaultdict(lambda x: [])
-    for conv in conversations_to_process:
-        sol_tracker = solution_tracker(conv, True, None)
+    for conv in raw_data:
+        sol_tracker = solution_tracker(conv, False, None)
         sols[conv.identifier] = sol_tracker
 
-    featurise_solution_participation(sols, conversations_to_process, '../features/solution_participation.tsv')
+    featurise_solution_participation(sols, raw_data, '../features/solution_participation.tsv')

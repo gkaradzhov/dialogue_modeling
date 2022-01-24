@@ -124,10 +124,10 @@ if __name__ == '__main__':
                 #     ('selector', ItemSelector(key='context')),
                 #     ('gpt1', DialoGPT()),
                 # ])),
-                # ('current_gpt', Pipeline([
-                #     ('selector', ItemSelector(key='current')),
-                #     ('gpt2', DialoGPT()),
-                # ])),
+                ('current_gpt', Pipeline([
+                    ('selector', ItemSelector(key='current')),
+                    ('gpt2', DialoGPT()),
+                ])),
             ],
             transformer_weights={
                 'context_tf': 0,

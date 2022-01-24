@@ -8,7 +8,7 @@ from external_tools.cornellversation.constructive.turn_features import turn_feat
 from read_data import read_wason_dump
 
 def featurise(path_message, path_turns):
-    raw = read_wason_dump('../data/all_data_20210107/')
+    raw = read_wason_dump('../data/final_all/')
 
     nlp = spacy.load("en_core_web_sm")
     for item in raw:

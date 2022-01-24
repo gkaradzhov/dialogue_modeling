@@ -1,3 +1,6 @@
+from nltk.tokenize import TweetTokenizer
+
+
 class WasonMessage:
     def __init__(self, origin, content, annotation_obj, identifier, type='MESSAGE'):
         self.identifier = identifier
@@ -6,7 +9,7 @@ class WasonMessage:
         self.annotation = annotation_obj
         self.content_tokenised = []
         self.content_pos = []
-        self.no_solution_text = ""
+        self.clean_text = ""
         self.type = type
 
     def merge_annotations(self, external_annotation_object):
@@ -19,19 +22,29 @@ class WasonConversation:
         self.raw_db_conversation = []
         self.wason_messages = []
         self.identifier = identifier
+        self.tknzr = TweetTokenizer()
 
     def preprocess_everything(self, tagger):
         for item in self.wason_messages:
             doc = tagger(item.content)
             item.content_pos = [a.pos_ for a in doc]
-            item.content_tokenised = [a.text for a in doc]
+            item.content_tokenised = self.tknzr.tokenize(item.content)
 
-    def remove_solutions(self):
+    def clean_special_tokens(self):
         initial_cards = self.get_initial_cards()
-
+        users = self.get_users()
+        users_upper = [u.upper() for u in users if u != 'SYSTEM']
         for item in self.wason_messages:
-            no_sol = [a if a not in initial_cards else '' for a in item.content_tokenised]
-            item.no_solution_text = " ".join(no_sol)
+            clean_tokens = []
+            for token in item.content_tokenised:
+                if token.upper() in initial_cards:
+                    clean_tokens.append('<CARD>')
+                elif token.upper().replace('@', '') in users_upper:
+                    clean_tokens.append('<MENTION>')
+                else:
+                    clean_tokens.append(token)
+
+            item.clean_text = " ".join(clean_tokens)
 
     def get_initial_cards(self):
         cards = set()
@@ -40,6 +53,12 @@ class WasonConversation:
                 cards.update([l['value'] for l in rm['content']])
                 break
         return cards
+
+    def get_users(self):
+        users = set()
+        for item in self.wason_messages:
+            users.add(item.origin)
+        return users
 
     def wason_messages_from_raw(self):
         self.wason_messages = []

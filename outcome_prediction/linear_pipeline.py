@@ -1,18 +1,21 @@
 from itertools import combinations
 
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 from scipy import stats
 
-from sklearn.linear_model import SGDClassifier
+from sklearn.linear_model import SGDClassifier, LinearRegression, LogisticRegression
 from sklearn.metrics import classification_report, roc_auc_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import GridSearchCV, LeaveOneOut
+from sklearn.model_selection import GridSearchCV, LeaveOneOut, KFold
 
 from featurisers.raw_wason_featuriser import get_y
 from prediction_utils import get_features, merge_feauters, features_labels_to_xy, \
-    decision_tree_representation, decision_tree_stats
+    decision_tree_representation, decision_tree_stats, logging
 from read_data import read_wason_dump
 import numpy as np
 
@@ -43,17 +46,27 @@ FEATURE_MAPS = {
     'fast_text_additional_uni': '../features/fast_text_representation_additional_20_uni.tsv',
     'fast_text_sc': '../features/fast_text_representation_sc.tsv',
     'fast_text_stats': '../features/fast_text_representation_stats.tsv',
+    'ids_2': '../features/ids_2',
+    'ids_3': '../features/ids_3',
+    'ids_4_5': '../features/ids_4_5',
+    'ids_multi': '../features/ids_milti',
+    'ids_all': '../features/ids_all'
 }
 
 if __name__ == '__main__':
     # 1. Read Labels
-    raw_data = read_wason_dump('../data/all_data_20210107/')
+    raw_data = read_wason_dump('../data/final_all/')
     Y_raw = get_y(raw_data)
+
+    ids = get_features(FEATURE_MAPS, 'ids_all')
+    print(len(ids))
 
     # 2. Get features
     meta_feats = get_features(FEATURE_MAPS, 'dialogue_metadata')
     annotation = get_features(FEATURE_MAPS, 'annotation_features')
+
     sc_turns = get_features(FEATURE_MAPS, 'street_crowd_turns')
+
     sc_messages = get_features(FEATURE_MAPS, 'street_crowd_messages')
     sol_part = get_features(FEATURE_MAPS, 'solution_participation')
     pos_cor = get_features(FEATURE_MAPS, 'positive_correlations')
@@ -82,9 +95,9 @@ if __name__ == '__main__':
 
     feature_combinations = {
         'meta_feats': meta_feats,
-        'annotation': annotation,
-        # 'sc_turns': sc_turns,
-        # 'sc_messages': sc_messages,
+        # 'annotation': annotation,
+        'sc_turns': sc_turns,
+        'sc_messages': sc_messages,
         'solution_participation': sol_part,
         # 'annotation_tf_type': tf_type,
         # 'annotation_tf_target': tf_target,
@@ -121,7 +134,7 @@ if __name__ == '__main__':
         counter += 1
         merged_feats = merge_feauters([feature_combinations[c] for c in comb])
 
-        X, Y = features_labels_to_xy(merged_feats, Y_raw, annotation.keys())
+        X, Y = features_labels_to_xy(merged_feats, Y_raw, ids)
         X = np.array(X)
         print("X Len: ", len(X))
         # 4. Create pipeline
@@ -146,9 +159,10 @@ if __name__ == '__main__':
             #     'clf__criterion': ("gini", "entropy"),
             #     'clf__class_weight': ('balanced', None),
             # },
+            # {'clf': (LogisticRegression(),)},
             {
                 'clf': (DecisionTreeClassifier(random_state=42),),
-                    'clf__max_depth': (5,),
+                'clf__max_depth': (7,),
                 'clf__min_samples_leaf': (5,)
             },
             # {
@@ -165,8 +179,8 @@ if __name__ == '__main__':
         best_estimator = clf.best_estimator_
 
         # 6. LOOCV
+        # loo = KFold(n_splits=10)
         loo = LeaveOneOut()
-
         predicted = []
         gold = []
         dt_repres = []
@@ -178,12 +192,12 @@ if __name__ == '__main__':
 
             pred = new_fit.predict(X_test)
             # print("{} ::: {}".format(new_fit.predict_proba(X_test), y_test))
-            predicted.append(pred)
-            gold.append(y_test)
+            predicted.extend(pred)
+            gold.extend(y_test)
 
             dt_repres.append(decision_tree_representation(new_fit['clf']))
 
-        clas_rep = classification_report(gold, predicted)
+        clas_rep = classification_report(gold, predicted, output_dict=True)
 
         dt_stats = decision_tree_stats(dt_repres)
         print(clas_rep)
@@ -207,5 +221,6 @@ if __name__ == '__main__':
                 res.append(0)
 
         print(res)
-        # logging('clasification_roc_AUC_trees_11_ft20_fixed_params_final_experiments3.tsv', comb, clf.best_params_, performance, dt_stats)
+        print('=================')
+        logging('classification_allids.tsv', comb, clf.best_params_, performance, dt_stats)
 

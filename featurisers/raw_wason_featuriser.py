@@ -296,24 +296,53 @@ def get_y_regresion(collection):
     return Y
 
 
-
 if __name__ == '__main__':
     # nlp = spacy.load("en_core_web_sm")
     # for a in anns:
     #     a.preprocess_everything(nlp)
 
-    raw_data = read_wason_dump('../data/all_data_20210107/')
+    raw_data = read_wason_dump('../data/final_all/')
 
-    featurise(raw_data, '../features/wason_stats.tsv')
-    # stats = []
-    # for d in raw_data:
-    #     try:
-    #         prepr = preprocess_conversation_dump(d.raw_db_conversation)
-    #         s = calculate_stats(prepr)
-    #         if s['num_of_playing_wason'] >= 2:
-    #             stats.append(s)
-    #     except Exception as e:
-    #         print(e)
-    #
-    # print()
+    # featurise(raw_data, '../features/wason_stats.tsv')
 
+    ids_2 = []
+    ids_3 = []
+    ids_4_5 = []
+    ids_multi = []
+    ids_all = []
+    for d in raw_data:
+        try:
+            prepr = preprocess_conversation_dump(d.raw_db_conversation)
+            s = calculate_stats(prepr)
+            if s['num_of_playing_wason'] == 2:
+                ids_2.append(d.identifier)
+            if s['num_of_playing_wason'] == 3:
+                ids_3.append(d.identifier)
+            if s['num_of_playing_wason'] >= 4:
+                ids_4_5.append(d.identifier)
+            if s['num_of_playing_wason'] >= 3:
+                ids_multi.append(d.identifier)
+            if s['num_of_playing_wason'] >= 2:
+                ids_all.append(d.identifier)
+        except Exception as e:
+            print(e)
+
+    with open('../features/ids_2', 'w+') as wf:
+        for item in ids_2:
+            wf.write(item + '\n')
+
+    with open('../features/ids_3', 'w+') as wf:
+        for item in ids_3:
+            wf.write(item + '\n')
+
+    with open('../features/ids_4_5', 'w+') as wf:
+        for item in ids_4_5:
+            wf.write(item + '\n')
+
+    with open('../features/ids_milti', 'w+') as wf:
+        for item in ids_multi:
+            wf.write(item + '\n')
+
+    with open('../features/ids_all', 'w+') as wf:
+        for item in ids_all:
+            wf.write(item + '\n')
